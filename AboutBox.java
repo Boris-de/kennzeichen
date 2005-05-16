@@ -44,7 +44,7 @@ public class AboutBox extends Form implements CommandListener
 	public AboutBox(Display disp)
 	{
 		super("About"); //call inherited constructor
-		append(new StringItem(null,"About-Text"));
+		append(new StringItem(null,"http://kennzeichen.berlios.de"));
 		addCommand(new Command("OK",Command.OK,0));
 		setCommandListener(this);
 		oldForm=disp.getCurrent();
