@@ -52,7 +52,7 @@ public class KennzeichenHash extends Hashtable
 	//The function "find" searches the parameter "search_for"
 	public String find(String search_for) throws NotFoundException
 	{
-		String result, strland="";
+		String result, strland;
 		try {
 			result=(String)get(search_for.toUpperCase());
 			if(result==null) {
@@ -65,7 +65,7 @@ public class KennzeichenHash extends Hashtable
 		int land = Integer.parseInt(result.substring(pos+1));
 		switch (land) {
 			case  1: strland = " (Bayern)"; break;
-			case  2: strland = " (Baden-W?rttemberg)"; break;
+			case  2: strland = " (Baden-Württemberg)"; break;
 			case  3: strland = " (Berlin)"; break;
 			case  4: strland = " (Brandenburg)"; break;
 			case  5: strland = " (Bremen)"; break;
@@ -79,7 +79,7 @@ public class KennzeichenHash extends Hashtable
 			case 13: strland = " (Sachsen-Anhalt)"; break;
 			case 14: strland = " (Saarland)"; break;
 			case 15: strland = " (Schleswig-Holstein)"; break;
-			case 16: strland = " (Th?ringen)"; break;
+			case 16: strland = " (Thüringen)"; break;
 			case 20: strland = " (Sonderkennzeichen)"; break;
 			default: strland = "";
 		}
@@ -99,6 +99,7 @@ public class KennzeichenHash extends Hashtable
 		put("AN", "Ansbach;1");
 		put("ANA", "Annaberg;12");
 		put("AÖ", "Altötting;1");
+		put("Aö", "Altötting;1");
 		put("AP", "Weimarer Land;16");
 		put("AS", "Amberg-Sulzbach;1");
 		put("ASL", "Aschersleben;13");
@@ -119,6 +120,7 @@ public class KennzeichenHash extends Hashtable
 		put("BL", "Zollernalbkreis;2");
 		put("BLK", "Burgenlandkreis;13");
 		put("BÖ", "Bördekreis;13");
+		put("Bö", "Bördekreis;13");
 		put("BOR", "Borken;10");
 		put("BRA", "Wesermarsch;9");
 		put("BRB", "Brandenburg;4");
@@ -126,6 +128,7 @@ public class KennzeichenHash extends Hashtable
 		put("BT", "Bayreuth;1");
 		put("BTF", "Bitterfeld;13");
 		put("BÜS", "Büsingen am Hochrhein;2");
+		put("BüS", "Büsingen am Hochrhein;2");
 		put("BZ", "Bautzen;12");
 		put("BI", "Bielefeld;10");
 		put("BIT", "Bitburg;11");
@@ -150,6 +153,7 @@ public class KennzeichenHash extends Hashtable
 		put("DO", "Dortmund;10");
 		put("DU", "Duisburg;10");
 		put("DÜW", "Bad Dürkheim (Weinstraße);11");
+		put("DüW", "Bad Dürkheim (Weinstraße);11");
 		put("DA", "Darmstadt;7");
 		put("DAH", "Dachau;1");
 		put("DAN", "Lüchow-Dannenberg;9");
@@ -200,6 +204,7 @@ public class KennzeichenHash extends Hashtable
 		put("FS", "Freising;1");
 		put("FT", "Frankenthal in der Pfalz;11");
 		put("FÜ", "Fürth;1");
+		put("Fü", "Fürth;1");
 		put("GE", "Gelsenkirchen;10");
 		put("GL", "Rheinisch-Bergischer Kreis;10");
 		put("G", "Gera;16");
@@ -211,6 +216,7 @@ public class KennzeichenHash extends Hashtable
 		put("GI", "Gießen;7");
 		put("GM", "Oberbergischer Kreis;10");
 		put("GÖ", "Göttingen;9");
+		put("Gö", "Göttingen;9");
 		put("GP", "Göppingen;2");
 		put("GR", "Görlitz;12");
 		put("GRZ", "Greiz;16");
@@ -218,6 +224,7 @@ public class KennzeichenHash extends Hashtable
 		put("GT", "Gütersloh;10");
 		put("GTH", "Gotha;16");
 		put("GÜ", "Güstrow;8");
+		put("Gü", "Güstrow;8");
 		put("GZ", "Günzburg;1");
 		put("H", "Hannover;9");
 		put("HS", "Heinsberg;10");
@@ -279,15 +286,18 @@ public class KennzeichenHash extends Hashtable
 		put("KM", "Kamenz;12");
 		put("KN", "Konstanz;2");
 		put("KÖT", "Köthen;13");
+		put("KöT", "Köthen;13");
 		put("KS", "Kassel;7");
 		put("KT", "Kitzingen;1");
 		put("KU", "Kulmbach;1");
 		put("KÜN", "Hohenlohe-Kreis;2");
+		put("KüN", "Hohenlohe-Kreis;2");
 		put("KUS", "Kusel;11");
 		put("KYF", "Kyffhäuserkreis;16");
 		put("L", "Leipzig;12");
 		put("LEV", "Leverkusen;10");
 		put("LÖ", "Lörrach;2");
+		put("Lö", "Lörrach;2");
 		put("LA", "Landshut;1");
 		put("LAU", "Nürnberger Land;1");
 		put("LB", "Ludwigsburg;2");
@@ -323,13 +333,15 @@ public class KennzeichenHash extends Hashtable
 		put("MN", "Unterallgäu;1");
 		put("MOL", "Märkisch-Oderland;4");
 		put("MOS", "Neckar-Odenwald-Kreis;2");
-		put("MQ:Merseburg-Querfurt", "13");
+		put("MQ", "Merseburg-Querfurt;13");
 		put("MR", "Marburg-Biedenkopf;7");
 		put("MSP", "Main-Spessart-Kreis;1");
 		put("MST", "Mecklenburg-Strelitz;8");
 		put("MTK", "Main-Taunus-Kreis;7");
 		put("MÜ", "Mühldorf am Inn;1");
+		put("Mü", "Mühldorf am Inn;1");
 		put("MÜR", "Müritz;8");
+		put("MüR", "Müritz;8");
 		put("MW", "Mittweida;12");
 		put("MZ", "Mainz-Bingen;11");
 		put("MZG", "Merzig-Wadern;14");
@@ -383,6 +395,7 @@ public class KennzeichenHash extends Hashtable
 		put("PIR", "Sächsische Schweiz;12");
 		put("PL", "Plauen;12");
 		put("PLÖ", "Plön;15");
+		put("PLö", "Plön;15");
 		put("PM", "Potsdam-Mittelmark;4");
 		put("PR", "Prignitz;4");
 		put("PS", "Pirmasens;11");
@@ -400,7 +413,9 @@ public class KennzeichenHash extends Hashtable
 		put("RSL", "Roßlau (Elbe);13");
 		put("RT", "Reutlingen;2");
 		put("RÜD", "Rheingau-Taunus-Kreis;7");
+		put("RüD", "Rheingau-Taunus-Kreis;7");
 		put("RÜG", "Rügen;8");
+		put("RüG", "Rügen;8");
 		put("RV", "Ravensburg;2");
 		put("RW", "Rottweil;2");
 		put("RZ", "Herzogtum Lauenburg;15");
@@ -432,6 +447,7 @@ public class KennzeichenHash extends Hashtable
 		put("SO", "Soest;10");
 		put("SOK", "Saale-Orla-Kreis;16");
 		put("SÖM", "Sömmerda;16");
+		put("SöM", "Sömmerda;16");
 		put("SON", "Sonneberg;16");
 		put("SP", "Speyer;11");
 		put("SPN", "Spree-Neiße;4");
@@ -440,6 +456,7 @@ public class KennzeichenHash extends Hashtable
 		put("STD", "Stade;9");
 		put("STL", "Stollberg;12");
 		put("SÜW", "Südliche Weinstraße;11");
+		put("SüW", "Südliche Weinstraße;11");
 		put("SW", "Schweinfurt;1");
 		put("SZ", "Salzgitter;9");
 		put("SU", "Rhein-Sieg-Kreis;10");
@@ -448,9 +465,11 @@ public class KennzeichenHash extends Hashtable
 		put("TIR", "Tirschenreuth;1");
 		put("TO", "Torgau-Oschatz;12");
 		put("TÖL", "Bad Tölz-Wolfratshausen;1");
+		put("TöL", "Bad Tölz-Wolfratshausen;1");
 		put("TR", "Trier und Trier-Saarburg;11");
 		put("TS", "Traunstein;1");
 		put("TÜ", "Tübingen;2");
+		put("Tü", "Tübingen;2");
 		put("TUT", "Tuttlingen;2");
 		put("UE", "Uelzen;9");
 		put("UER", "Uecker-Randow;8");
@@ -488,6 +507,7 @@ public class KennzeichenHash extends Hashtable
 		put("WT", "Waldshut;2");
 		put("WTM", "Wittmund;9");
 		put("WÜ", "Würzburg;1");
+		put("Wü", "Würzburg;1");
 		put("WUG", "Weißenburg-Gunzenhausen;1");
 		put("WUN", "Wunsiedel;1");
 		put("WW", "Westerwaldkreis;11");

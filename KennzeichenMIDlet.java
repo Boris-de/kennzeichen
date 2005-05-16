@@ -29,7 +29,7 @@
  */
 
 import javax.microedition.lcdui.*;
-import javax.microedition.midlet.*;
+import javax.microedition.midlet.MIDlet;
 
 public class KennzeichenMIDlet extends MIDlet implements CommandListener
 {
@@ -54,7 +54,7 @@ public class KennzeichenMIDlet extends MIDlet implements CommandListener
 		myMainForm.append(field_Output);
 		myMainForm.addCommand(new Command("OK",Command.OK,1));
 		myMainForm.addCommand(new Command("Beenden",Command.EXIT,3));
-		myMainForm.addCommand(new Command("About",Command.HELP,2));
+		myMainForm.addCommand(new Command("Hilfe",Command.HELP,2));
 		myMainForm.setCommandListener(this);
 
 		myKennzeichenHash=new KennzeichenHash();
@@ -81,16 +81,20 @@ public class KennzeichenMIDlet extends MIDlet implements CommandListener
 		{
 		case Command.OK:
 			String Kennzeichen = new String(field_Kennzeichen.getString());
-			//diplay status-message
-			field_Output.setText("Suche nach: "+Kennzeichen);
-			//search and display
-			try {
-				field_Output.setText(myKennzeichenHash.find(Kennzeichen));
-			}
-			catch (KennzeichenHash.NotFoundException nfe)
-			{
-				field_Output.setText(Kennzeichen+" wurde nicht gefunden.");
-			}
+                        if(Kennzeichen.length()>0) {
+				//diplay status-message
+				field_Output.setText("Suche nach: "+Kennzeichen);
+				//search and display
+				try {
+					field_Output.setText(myKennzeichenHash.find(Kennzeichen));
+				}
+				catch (KennzeichenHash.NotFoundException nfe)
+				{
+					field_Output.setText(Kennzeichen+" wurde nicht gefunden.");
+				}
+                        } else {
+				field_Output.setText("Kein Kennzeichen eingegeben!");
+                        }
 			break;
 		case Command.HELP:
 			new AboutBox(disp); //Open AboutBox

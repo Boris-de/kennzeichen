@@ -29,12 +29,7 @@
  */
 
 import javax.microedition.lcdui.*;
-import javax.microedition.midlet.*;
 
-/**
- *
- * @author Boris
- */
 public class AboutBox extends Form implements CommandListener
 {
 	private Displayable oldForm;
@@ -43,8 +38,9 @@ public class AboutBox extends Form implements CommandListener
 	/** Creates a new instance of AboutBox */
 	public AboutBox(Display disp)
 	{
-		super("About"); //call inherited constructor
-		append(new StringItem(null,"http://kennzeichen.berlios.de"));
+		super("Hilfe"); //call inherited constructor
+		append(new StringItem(null, "Zur Suche einfach das Kennzeichen in die Box eingeben und mit OK bestätigen.\n"));
+		append(new StringItem(null,"\nMehr Informationen unter\nhttp://kennzeichen.berlios.de"));
 		addCommand(new Command("OK",Command.OK,0));
 		setCommandListener(this);
 		oldForm=disp.getCurrent();
@@ -57,7 +53,7 @@ public class AboutBox extends Form implements CommandListener
 	{
 		switch(c.getCommandType())
 		{
-			case Command.OK: case Command.EXIT:
+			case Command.OK:
 				mainDisp.setCurrent(oldForm);
 				break;
 		}
