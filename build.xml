@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Kennzeichen" default="compile" basedir=".">
+<project name="Kennzeichen" default="package" basedir=".">
 	<description>Builds the Kennzeichen-Project</description>
+
+	<loadproperties srcfile="project.properties" />
 
 	<!-- Set some (default) values -->
 	<property name="name" value="Kennzeichen" />
@@ -12,8 +14,7 @@
 	<property name="antenna_path" value="3rd-party/antenna.jar" />
 	<property name="wtk.midp.version" value="1.0" />
 
-	<!-- load properties and import the antenna-tasks -->
-	<loadproperties srcfile="project.properties" />
+	<!-- import the antenna-tasks -->
 	<taskdef name="wtkjad" classname="de.pleumann.antenna.WtkJad" classpath="${antenna_path}" />
 	<taskdef name="wtkbuild" classname="de.pleumann.antenna.WtkBuild" classpath="${antenna_path}" />
 	<taskdef name="wtkpackage" classname="de.pleumann.antenna.WtkPackage" classpath="${antenna_path}" />
@@ -25,8 +26,8 @@
 	</target>
 
 	<target name="create_jad">
-		<wtkjad jadfile="${bindir}/${filename}.jad" jarfile="${bindir}/${filename}.jar" manifest="${bindir}/MANIFEST.MF" name="${name}" vendor="http://kennzeichen.berlios.de" version="${version}" encoding="UTF-8">
-			<midlet name="Kennzeichen" class="KennzeichenMIDlet" />
+		<wtkjad jadfile="${bindir}/${filename}-${version}.jad" jarfile="${bindir}/${filename}-${version}.jar" manifest="${bindir}/MANIFEST.MF" name="${name}" vendor="http://kennzeichen.berlios.de" version="${version}" encoding="UTF-8">
+			<midlet name="Kennzeichen" class="KennzeichenMIDlet" icon="kennzeichen.png" />
 		</wtkjad>
 	</target>
 
@@ -35,7 +36,11 @@
 	</target>
 
 	<target name="package" description="Package a .jar" depends="compile,create_jad">
-		<wtkpackage jarfile="${bindir}/${filename}.jar" jadfile="${bindir}/${filename}.jad" basedir="${classdir}" manifest="${bindir}/MANIFEST.MF" preverify="false" />
+		<wtkpackage jarfile="${bindir}/${filename}-${version}.jar" jadfile="${bindir}/${filename}-${version}.jad" basedir="${classdir}" manifest="${bindir}/MANIFEST.MF" preverify="false">
+			<fileset dir="res">
+				<include name="kennzeichen.png"/>
+			</fileset>
+		</wtkpackage>
 	</target>
 
 	<target name="run" depends="package">
