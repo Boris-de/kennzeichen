@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Kennzeichen" default="compile" basedir=".">
+	<description>Builds the Kennzeichen-Project</description>
+
+	<!-- Set some (default) values -->
+	<property name="name" value="Kennzeichen" />
+	<property name="filename" value="kennzeichen" />
+	<property name="bindir" location="bin" />
+	<property name="classdir" location="classes" />
+	<property name="srcdir" location="." />
+	<property name="version" value="0.0" />
+	<property name="antenna_path" value="3rd-party/antenna.jar" />
+	<property name="wtk.midp.version" value="1.0" />
+
+	<!-- load properties and import the antenna-tasks -->
+	<loadproperties srcfile="project.properties" />
+	<taskdef name="wtkjad" classname="de.pleumann.antenna.WtkJad" classpath="${antenna_path}" />
+	<taskdef name="wtkbuild" classname="de.pleumann.antenna.WtkBuild" classpath="${antenna_path}" />
+	<taskdef name="wtkpackage" classname="de.pleumann.antenna.WtkPackage" classpath="${antenna_path}" />
+	<taskdef name="wtkrun" classname="de.pleumann.antenna.WtkRun" classpath="${antenna_path}" />
+
+	<target name="init" description="Builds the directory-structure">
+		<mkdir dir="${bindir}" />
+		<mkdir dir="${classdir}" />
+	</target>
+
+	<target name="create_jad">
+		<wtkjad jadfile="${bindir}/${filename}.jad" jarfile="${bindir}/${filename}.jar" manifest="${bindir}/MANIFEST.MF" name="${name}" vendor="http://kennzeichen.berlios.de" version="${version}">
+			<midlet name="Kennzeichen" class="KennzeichenMIDlet" />
+		</wtkjad>
+    </target>
+
+	<target name="compile" description="Compile the project" depends="init">
+		<wtkbuild srcdir="${srcdir}" destdir="${classdir}" preverify="true" />
+	</target>
+
+	<target name="package" description="Package a .jar" depends="compile,create_jad">
+		<wtkpackage jarfile="${bindir}/${filename}.jar" jadfile="${bindir}/${filename}.jad" basedir="${classdir}" manifest="${bindir}/MANIFEST.MF" preverify="false" />
+	</target>
+
+	<target name="run" depends="package">
+		<wtkrun jadfile="${bindir}/${filename}.jad" device="DefaultColorPhone" wait="true" />
+	</target>
+
+	<target name="clean" description="Clean up" depends="init">
+		<delete dir="${classdir}" />
+		<delete dir="${bindir}" />
+	</target>
+</project>
