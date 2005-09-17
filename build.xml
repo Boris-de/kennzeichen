@@ -25,10 +25,10 @@
 	</target>
 
 	<target name="create_jad">
-		<wtkjad jadfile="${bindir}/${filename}.jad" jarfile="${bindir}/${filename}.jar" manifest="${bindir}/MANIFEST.MF" name="${name}" vendor="http://kennzeichen.berlios.de" version="${version}">
+		<wtkjad jadfile="${bindir}/${filename}.jad" jarfile="${bindir}/${filename}.jar" manifest="${bindir}/MANIFEST.MF" name="${name}" vendor="http://kennzeichen.berlios.de" version="${version}" encoding="UTF-8">
 			<midlet name="Kennzeichen" class="KennzeichenMIDlet" />
 		</wtkjad>
-    </target>
+	</target>
 
 	<target name="compile" description="Compile the project" depends="init">
 		<wtkbuild srcdir="${srcdir}" destdir="${classdir}" preverify="true" />

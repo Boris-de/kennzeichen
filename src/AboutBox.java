@@ -34,12 +34,12 @@ public class AboutBox extends Form implements CommandListener
 {
 	private Displayable oldForm;
 	private Display mainDisp;
-	
+
 	/** Creates a new instance of AboutBox */
 	public AboutBox(Display disp)
 	{
 		super("Hilfe"); //call inherited constructor
-		append(new StringItem(null, "Zur Suche einfach das Kennzeichen in die Box eingeben und mit OK bestätigen.\n"));
+		append(new StringItem(null, "Zur Suche einfach das Kennzeichen in die Box eingeben und mit OK best\u00E4tigen.\n"));
 		append(new StringItem(null,"\nMehr Informationen unter\nhttp://kennzeichen.berlios.de"));
 		addCommand(new Command("OK",Command.OK,0));
 		setCommandListener(this);
@@ -47,7 +47,7 @@ public class AboutBox extends Form implements CommandListener
 		disp.setCurrent(this);
 		mainDisp=disp;
 	}
-	
+
 	/** Implements the CommandListener functionality of this Form */
 	public void commandAction(Command c, Displayable s)
 	{
