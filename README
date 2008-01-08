@@ -1,18 +1,10 @@
 == Compilation ==
-This projects uses Ant [1] and Antenna [2] for an automated build process.
-Be shure, that you have Ant installed and the antenna.jar in the "3rd-party"-
-directory of this package or adjust the "antenna_path"-property in your
-build.xml. Then create a file named "project.properties" and a line containing
-
-wtk.home=/path/to/your/wtk
-
-or set the "wtk.home"-option in the build.xml yourself.
-
+This projects uses Ant [1] via Netbeans [2] for an automated build process.
+I may work without Netbeans, just try it.
 
 References:
 [1] http://ant.apache.org
-[2] http://antenna.sourceforge.net
-
+[2] http://www.netbeans.org
 
 
 == Installation ==

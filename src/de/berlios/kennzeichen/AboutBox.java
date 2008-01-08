@@ -1,4 +1,4 @@
-/* Copyright (c) 2004, 2005, Boris Wachtmeister
+/* Copyright (c) 2004-2008, Boris Wachtmeister
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -27,35 +27,39 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
+package de.berlios.kennzeichen;
 
-import javax.microedition.lcdui.*;
 
-public class AboutBox extends Form implements CommandListener
-{
-	private Displayable oldForm;
-	private Display mainDisp;
+import javax.microedition.lcdui.Command;
+import javax.microedition.lcdui.CommandListener;
+import javax.microedition.lcdui.Display;
+import javax.microedition.lcdui.Displayable;
+import javax.microedition.lcdui.Form;
+import javax.microedition.lcdui.StringItem;
 
-	/** Creates a new instance of AboutBox */
-	public AboutBox(Display disp)
-	{
-		super("Hilfe"); //call inherited constructor
-		append(new StringItem(null, "Zur Suche einfach das Kennzeichen in die Box eingeben und mit OK best\u00E4tigen.\n"));
-		append(new StringItem(null,"\nMehr Informationen unter\nhttp://kennzeichen.berlios.de"));
-		addCommand(new Command("OK",Command.OK,0));
-		setCommandListener(this);
-		oldForm=disp.getCurrent();
-		disp.setCurrent(this);
-		mainDisp=disp;
-	}
 
-	/** Implements the CommandListener functionality of this Form */
-	public void commandAction(Command c, Displayable s)
-	{
-		switch(c.getCommandType())
-		{
-			case Command.OK:
-				mainDisp.setCurrent(oldForm);
-				break;
-		}
-	}
+public class AboutBox extends Form implements CommandListener {
+    private Displayable oldForm;
+    private Display mainDisp;
+
+    /** Creates a new instance of AboutBox */
+    public AboutBox(Display disp) {
+        super("Hilfe"); //call inherited constructor
+        append(new StringItem(null, "Zur Suche einfach das Kennzeichen in die Box eingeben und mit OK best\u00E4tigen.\n"));
+        append(new StringItem(null, "\nMehr Informationen unter\nhttp://kennzeichen.berlios.de"));
+        addCommand(new Command("OK", Command.OK, 0));
+        setCommandListener(this);
+        oldForm = disp.getCurrent();
+        disp.setCurrent(this);
+        mainDisp = disp;
+    }
+
+    /** Implements the CommandListener functionality of this Form */
+    public void commandAction(Command c, Displayable s) {
+        switch (c.getCommandType()) {
+            case Command.OK:
+                mainDisp.setCurrent(oldForm);
+                break;
+        }
+    }
 }

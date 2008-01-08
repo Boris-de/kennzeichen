@@ -1,0 +1,425 @@
+A;Augsburg;1
+AA;Ostalbkreis;2
+AB;Aschaffenburg;1
+ABG;Altenburger Land;16
+AC;Aachen;10
+AIC;Aichach-Friedberg;1
+AK;Altenkirchen;11
+AM;Amberg;1
+AN;Ansbach;1
+ANA;Annaberg;12
+AÖ;Altötting;1
+AP;Weimarer Land;16
+AS;Amberg-Sulzbach;1
+ASL;Aschersleben;13
+ASZ;Aue-Schwarzenberg;12
+AUR;Aurich;9
+AW;Bad Neuenahr Ahrweiler;11
+AZ;Alzey-Worms;11
+AZE;Anhalt-Zerbst;13
+B;Berlin;3
+BA;Bamberg;1
+BAD;Baden-Baden;2
+BAR;Barnim;4
+BB;Böblingen;2
+BBG;Bernburg;13
+BC;Biberach an der Riß;2
+BGL;Berchtesgadener Land;1
+BIR;Birkenfeld an der Nahe;11
+BL;Zollernalbkreis;2
+BLK;Burgenlandkreis;13
+BÖ;Bördekreis;13
+BOR;Borken;10
+BRA;Wesermarsch;9
+BRB;Brandenburg;4
+BS;Braunschweig;9
+BT;Bayreuth;1
+BTF;Bitterfeld;13
+BÜS;Büsingen am Hochrhein;2
+BZ;Bautzen;12
+BI;Bielefeld;10
+BIT;Bitburg;11
+BM;Erftkreis;10
+BN;Bonn;10
+BO;Bochum;10
+BOT;Bottrop;10
+C;Chemnitz;12
+CB;Cottbus;4
+CE;Celle;9
+CHA;Cham;1
+CLP;Cloppenburg;9
+CO;Coburg;1
+COC;Cochem;11
+COE;Coesfeld;10
+CUX;Cuxhaven;9
+CW;Calw;2
+D;Düsseldorf;10
+DAU;Daun;11
+DD;Dresden;12
+DN;Düren;10
+DO;Dortmund;10
+DU;Duisburg;10
+DÜW;Bad Dürkheim (Weinstraße);11
+DA;Darmstadt;7
+DAH;Dachau;1
+DAN;Lüchow-Dannenberg;9
+DBR;Bad Doberan;8
+DE;Dessau;13
+DEG;Deggendorf;1
+DEL;Delmenhorst;9
+DGF;Dingolfing-Landau;1
+DH;Diepholz;9
+DL;Döbeln;12
+DLG;Dillingen an der Donau;1
+DM;Demmin;8
+DON;Donau-Ries;1
+DW;Weißeritzkreis;12
+DZ;Delitzsch;12
+E;Essen;10
+EU;Euskirchen;10
+EA;Eisenach;16
+EBE;Ebersberg;1
+ED;Erding;1
+EE;Elbe-Elster;4
+EF;Erfurt;16
+EI;Eichstätt;1
+EIC;Eichsfeld;16
+EL;Emsland;9
+EM;Emmendingen;2
+EMD;Emden;9
+EMS;Rhein-Lahn-Kreis;11
+EN;Ennepe-Ruhr-Kreis;10
+ER;Erlangen;1
+ERB;Odenwaldkreis;7
+ERH;Erlangen-Höchstadt;1
+ES;Esslingen an der Neckar;2
+ESW;Werra-Meißner-Kreis;7
+F;Frankfurt am Main;7
+FR;Freiburg im Breisgau und Breisgau-Hochschwarzwald;2
+FB;Wetteraukreis;7
+FD;Fulda;7
+FDS;Freudenstadt;2
+FF;Frankfurt an der Oder;4
+FFB;Fürstenfeldbruck;1
+FG;Freiberg;12
+FL;Flensburg;15
+FN;Bodenseekreis;2
+FO;Forchheim;1
+FRG;Freyung-Grafenau;1
+FRI;Friesland;9
+FS;Freising;1
+FT;Frankenthal in der Pfalz;11
+FÜ;Fürth;1
+GE;Gelsenkirchen;10
+GL;Rheinisch-Bergischer Kreis;10
+G;Gera;16
+GAP;Garmisch-Partenkirchen;1
+GC;Chemnitzer Land;12
+GER;Germersheim;11
+GF;Gifhorn;9
+GG;Groß-Gerau;7
+GI;Gießen;7
+GM;Oberbergischer Kreis;10
+GÖ;Göttingen;9
+GP;Göppingen;2
+GR;Görlitz;12
+GRZ;Greiz;16
+GS;Goslar;9
+GT;Gütersloh;10
+GTH;Gotha;16
+GÜ;Güstrow;8
+GZ;Günzburg;1
+H;Hannover;9
+HS;Heinsberg;10
+HSK;Hochsauerlandkreis;10
+HA;Hagen;10
+HAL;Halle (Saale);13
+HAM;Hamm;10
+HAS;Haßberge;1
+HB;Hansestadt Bremen;5
+HBN;Hildburghausen;16
+HBS;Halberstadt;13
+HD;Heidelberg und Rhein-Neckar-Kreis;2
+HDH;Heidenheim;2
+HE;Helmstedt;9
+HEF;Hersfeld-Rotenburg an der Fulda;7
+HEI;Dithmarschen;15
+HER;Herne;10
+HF;Herford;10
+HG;Hochtaunuskreis;7
+HGW;Hansestadt Greifswald;8
+HH;Hansestadt Hamburg;6
+HI;Hildesheim;9
+HL;Hansestadt Lübeck;15
+HM;Hameln-Pyrmont;9
+HN;Heilbronn;2
+HO;Hof;1
+HOL;Holzminden;9
+HOM;Saar-Pfalz-Kreis;14
+HP;Bergstraße;7
+HR;Schwalm-Eder-Kreis;7
+HRO;Hansestadt Rostock;8
+HST;Hansestadt Stralsund;8
+HU;Main-Kinzig-Kreis;7
+HVL;Havelland;4
+HWI;Hansestadt Wismar;8
+HX;Höxter;10
+HY;Hoyerswerda;12
+IGB;St. Ingbert;14
+IK;Ilm-Kreis;16
+IN;Ingolstadt;1
+IZ;Steinburg;15
+J;Jena;16
+JL;Jerichower Land;13
+K;Köln;10
+KA;Karlsruhe;2
+KLE;Kleve;10
+KO;Koblenz;11
+KR;Krefeld;10
+KB;Waldeck-Frankenberg;7
+KC;Kronach;1
+KE;Kempten im Allgäu;1
+KEH;Kelheim;1
+KF;Kaufbeuren;1
+KG;Bad Kissingen;1
+KH;Bad Kreuznach;11
+KI;Kiel;15
+KIB;Donnersberg-Kreis;11
+KL;Kaiserslautern;11
+KM;Kamenz;12
+KN;Konstanz;2
+KÖT;Köthen;13
+KS;Kassel;7
+KT;Kitzingen;1
+KU;Kulmbach;1
+KÜN;Hohenlohe-Kreis;2
+KUS;Kusel;11
+KYF;Kyffhäuserkreis;16
+L;Leipzig;12
+LEV;Leverkusen;10
+LÖ;Lörrach;2
+LA;Landshut;1
+LAU;Nürnberger Land;1
+LB;Ludwigsburg;2
+LD;Landau;11
+LDK;Lahn-Dill-Kreis;7
+LDS;Dahme-Spreewald;4
+LER;Leer;9
+LG;Lüneburg;9
+LI;Lindau;1
+LIF;Lichtenfels;1
+LIP;Lippe;10
+LL;Landsberg am Lech;1
+LM;Limburg-Weilburg;7
+LOS;Oder-Spree-Kreis;4
+LU;Ludwigshafen am Rhein;11
+LWL;Ludwigslust;8
+M;München;1
+MG;Mönchengladbach;10
+MK;Märkischer Kreis;10
+MS;Münster;10
+MYK;Mayen-Koblenz-Kreis;11
+MA;Mannheim;2
+MB;Miesbach;1
+MD;Magdeburg;13
+ME;Mettmann;10
+MEI;Meißen;12
+MEK;Mittlerer Erzgebirgskreis;12
+MH;Mülheim an der Ruhr;10
+MI;Minden-Lübbecke;10
+MIL;Miltenberg;1
+ML;Mansfelder Land;13
+MM;Memmingen;1
+MN;Unterallgäu;1
+MOL;Märkisch-Oderland;4
+MOS;Neckar-Odenwald-Kreis;2
+MQ;Merseburg-Querfurt;13
+MR;Marburg-Biedenkopf;7
+MSP;Main-Spessart-Kreis;1
+MST;Mecklenburg-Strelitz;8
+MTK;Main-Taunus-Kreis;7
+MÜ;Mühldorf am Inn;1
+MÜR;Müritz;8
+MW;Mittweida;12
+MZ;Mainz-Bingen;11
+MZG;Merzig-Wadern;14
+N;Nürnberg;1
+NE;Neuss;10
+NB;Neu-Brandenburg;8
+ND;Neuburg-Schrobenhausen;1
+NDH;Nordhausen;16
+NEA;Neustadt-Bad Windsheim;1
+NES;Rhön-Grabfeld in Bad Neustadt;1
+NEW;Neustadt an der Waldnaab;1
+NF;Nordfrieslandkreis;15
+NI;Nienburg / Weser;9
+NK;Neunkirchen / Saar;14
+NM;Neumarkt in der Oberpfalz;1
+NMS;Neumünster;15
+NOH;Grafschaft Bentheim;9
+NOL;Niederschlesischer Oberlausitzkreis;12
+NOM;Northeim;9
+NR;Neuwied/Rhein;11
+NU;Neu-Ulm;1
+NVP;Nordvorpommern;8
+NW;Neustadt an der Weinstraße;11
+NWM;Nordwestmecklenburg;8
+OE;Olpe;10
+OA;Oberallgäu;1
+OAL;Ostallgäu;1
+OB;Oberhausen;10
+OD;Stormarn;15
+OF;Offenbach;7
+OG;Ortenaukreis;2
+OH;Ostholstein;15
+OHA;Osterode im Harz;9
+OHV;Oberhavel;4
+OHZ;Osterholz;9
+OK;Ohre-Kreis;13
+OL;Oldenburg;9
+OPR;Ostprignitz-Ruppin;4
+OS;Osnabrück;9
+OSL;Oberspreewald-Lausitz;4
+OVP;Ostvorpommern;8
+P;Potsdam;4
+PA;Passau;1
+PAF;Pfaffenhofen an der Ilm;1
+PAN;Rottal-Inn;1
+PB;Paderborn;10
+PCH;Parchim;8
+PE;Peine;9
+PF;Pforzheim und Enzkreis;2
+PI;Pinneberg;15
+PIR;Sächsische Schweiz;12
+PL;Plauen;12
+PLÖ;Plön;15
+PM;Potsdam-Mittelmark;4
+PR;Prignitz;4
+PS;Pirmasens;11
+QLB;Quedlinburg;13
+R;Regensburg;1
+RA;Rastatt;2
+RD;Rendsburg-Eckernförde;15
+RE;Recklinghausen;10
+REG;Regen;1
+RG;Riesa-Großenhain;12
+RH;Roth;1
+RO;Rosenheim;1
+ROW;Rotenburg (Wümme);9
+RS;Remscheid;10
+RSL;Roßlau (Elbe);13
+RT;Reutlingen;2
+RÜD;Rheingau-Taunus-Kreis;7
+RÜG;Rügen;8
+RV;Ravensburg;2
+RW;Rottweil;2
+RZ;Herzogtum Lauenburg;15
+ST;Steinfurt;10
+S;Stuttgart;2
+SAD;Schwandorf;1
+SAW;Altmarkkreis Salzwedel;13
+SB;Saarbrücken;14
+SBK;Schönebeck;13
+SC;Schwabach;1
+SDL;Stendal;13
+SE;Segeberg;15
+SFA;Soltau-Fallingbostel;9
+SG;Solingen;10
+SGH;Sangerhausen;13
+SHA;Schwäbisch Hall;2
+SHG;Schaumburg;9
+SHK;Saale-Holzlandkreis;16
+SHL;Suhl;16
+SI;Siegen-Wittgenstein;10
+SIG;Sigmaringen;2
+SIM;Rhein-Hunsrück-Kreis;11
+SK;Saalkreis;13
+SL;Schleswig-Flensburg;15
+SLF;Saalfeld-Rudolstadt;16
+SLS;Saarlouis;14
+SM;Schmalkalden-Meiningen;16
+SN;Schwerin;8
+SO;Soest;10
+SOK;Saale-Orla-Kreis;16
+SÖM;Sömmerda;16
+SON;Sonneberg;16
+SP;Speyer;11
+SPN;Spree-Neiße;4
+SR;Straubing und Straubing-Bogen;1
+STA;Starnberg;1
+STD;Stade;9
+STL;Stollberg;12
+SÜW;Südliche Weinstraße;11
+SW;Schweinfurt;1
+SZ;Salzgitter;9
+SU;Rhein-Sieg-Kreis;10
+TBB;Main-Tauber-Kreis;2
+TF;Teltow-Fläming;4
+TIR;Tirschenreuth;1
+TO;Torgau-Oschatz;12
+TÖL;Bad Tölz-Wolfratshausen;1
+TR;Trier und Trier-Saarburg;11
+TS;Traunstein;1
+TÜ;Tübingen;2
+TUT;Tuttlingen;2
+UE;Uelzen;9
+UER;Uecker-Randow;8
+UH;Unstrut-Hainich-Kreis;16
+UL;Ulm und Alb-Donau-Kreis;2
+UM;Uckermark;4
+UN;Unna;10
+VIE;Viersen;10
+V;Vogtlandkreis;12
+VB;Vogelsbergkreis;7
+VEC;Vechta;9
+VER;Verden an der Aller;9
+VK;Völklingen;14
+VS;Schwarzwald-Baar-Kreis;2
+W;Wuppertal;10
+WAF;Warendorf;10
+WAK;Wartburgkreis;16
+WB;Wittenberg;13
+WE;Weimar;16
+WEN;Weiden in der Oberpfalz;1
+WES;Wesel;10
+WF;Wolfenbüttel;9
+WHV;Wilhelmshaven;9
+WI;Wiesbaden;7
+WIL;Bernkastel-Wittlich;11
+WL;Harburg;9
+WM;Weilheim-Schongau;1
+WN;Rems-Murr-Kreis;2
+WND;St. Wendel;14
+WO;Worms;11
+WOB;Wolfsburg;9
+WR;Wernigerode;13
+WSF;Weißenfels;13
+WST;Ammerland;9
+WT;Waldshut;2
+WTM;Wittmund;9
+WÜ;Würzburg;1
+WUG;Weißenburg-Gunzenhausen;1
+WUN;Wunsiedel;1
+WW;Westerwaldkreis;11
+Z;Zwickau und Zwickauer Land;12
+ZI;Löbau-Zittau;12
+ZW;Zweibrücken;11
+MKK;Main-Kinzig-Kreis;7
+RP;Rhein-Pfalz-Kreis;11
+0;Bundespräsident/Mitarbeiter, Bundeskanzler, Außenminister oder Diplomatisches Korps;0
+0-1;Bundespräsident oder Mitarbeiter;0
+0-2;Bundeskanzler;0
+0-3;AußFenminister;0
+0-4;1. Staatssekretär (Auswärtiges Amt);0
+1-1;Bundespräsident;0
+BBL;Brandenburg (Landtag);0
+BYL;Bayern (Landtag);0
+BWL;Baden-Württemberg (Landtag);0
+LSA;Sachsen-Anhalt (Landtag);0
+LSN;Sachsen (Landtag);0
+MVL;Mecklenburg-Vorpommern (Landtag);0
+NL;Niedersachsen (Landtag);0
+NRW;Nordrhein-Westfalen (Landtag/Polizei);0
+RPL;Rheinland-Pfalz (Landtag);0
+SAL;Saarland (Landtag);0
+SH;Schleswig Holstein (Landtag);0
