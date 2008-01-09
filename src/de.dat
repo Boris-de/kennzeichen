@@ -2,6 +2,7 @@ A;Augsburg;1
 AA;Ostalbkreis;2
 AB;Aschaffenburg;1
 ABG;Altenburger Land;16
+ABI;Anhalt-Bitterfeld;13
 AC;Aachen;10
 AIC;Aichach-Friedberg;1
 AK;Altenkirchen;11
@@ -26,6 +27,7 @@ BBG;Bernburg;13
 BC;Biberach an der Riß;2
 BGL;Berchtesgadener Land;1
 BIR;Birkenfeld an der Nahe;11
+BK;Börde;13
 BL;Zollernalbkreis;2
 BLK;Burgenlandkreis;13
 BÖ;Bördekreis;13
@@ -38,8 +40,8 @@ BTF;Bitterfeld;13
 BÜS;Büsingen am Hochrhein;2
 BZ;Bautzen;12
 BI;Bielefeld;10
-BIT;Bitburg;11
-BM;Erftkreis;10
+BIT;Eifelkreis Bitburg-Prüm;11
+BM;Rhein-Erft-Kreis;10
 BN;Bonn;10
 BO;Bochum;10
 BOT;Bottrop;10
@@ -54,7 +56,7 @@ COE;Coesfeld;10
 CUX;Cuxhaven;9
 CW;Calw;2
 D;Düsseldorf;10
-DAU;Daun;11
+DAU;Vulkaneifel (früher: Daun);11
 DD;Dresden;12
 DN;Düren;10
 DO;Dortmund;10
@@ -160,11 +162,12 @@ HP;Bergstraße;7
 HR;Schwalm-Eder-Kreis;7
 HRO;Hansestadt Rostock;8
 HST;Hansestadt Stralsund;8
-HU;Main-Kinzig-Kreis;7
+HU;Hanau;7
 HVL;Havelland;4
 HWI;Hansestadt Wismar;8
 HX;Höxter;10
 HY;Hoyerswerda;12
+HZ;Harz;13
 IGB;St. Ingbert;14
 IK;Ilm-Kreis;16
 IN;Ingolstadt;1
@@ -212,12 +215,14 @@ LIP;Lippe;10
 LL;Landsberg am Lech;1
 LM;Limburg-Weilburg;7
 LOS;Oder-Spree-Kreis;4
-LU;Ludwigshafen am Rhein;11
+LU;Ludwigshafen am Rhein (jetzt: Rhein-Pfalz-Kreis RP);11
 LWL;Ludwigslust;8
 M;München;1
 MG;Mönchengladbach;10
 MK;Märkischer Kreis;10
 MS;Münster;10
+MSH;Mansfeld-Südharz;13
+MTL;Muldentalkreis;12
 MYK;Mayen-Koblenz-Kreis;11
 MA;Mannheim;2
 MB;Miesbach;1
@@ -262,6 +267,7 @@ NOM;Northeim;9
 NR;Neuwied/Rhein;11
 NU;Neu-Ulm;1
 NVP;Nordvorpommern;8
+NWM;Nordwestmecklenburg;8
 NW;Neustadt an der Weinstraße;11
 NWM;Nordwestmecklenburg;8
 OE;Olpe;10
@@ -295,7 +301,7 @@ PL;Plauen;12
 PLÖ;Plön;15
 PM;Potsdam-Mittelmark;4
 PR;Prignitz;4
-PS;Pirmasens;11
+PS;Pirmasens und Südwestpfalz;11
 QLB;Quedlinburg;13
 R;Regensburg;1
 RA;Rastatt;2
@@ -336,6 +342,7 @@ SIM;Rhein-Hunsrück-Kreis;11
 SK;Saalkreis;13
 SL;Schleswig-Flensburg;15
 SLF;Saalfeld-Rudolstadt;16
+SLK;Salzlandkreis;13
 SLS;Saarlouis;14
 SM;Schmalkalden-Meiningen;16
 SN;Schwerin;8
@@ -410,7 +417,7 @@ RP;Rhein-Pfalz-Kreis;11
 0;Bundespräsident/Mitarbeiter, Bundeskanzler, Außenminister oder Diplomatisches Korps;0
 0-1;Bundespräsident oder Mitarbeiter;0
 0-2;Bundeskanzler;0
-0-3;AußFenminister;0
+0-3;Außenminister;0
 0-4;1. Staatssekretär (Auswärtiges Amt);0
 1-1;Bundespräsident;0
 BBL;Brandenburg (Landtag);0
