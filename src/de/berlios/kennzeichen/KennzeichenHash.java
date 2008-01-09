@@ -33,23 +33,39 @@ package de.berlios.kennzeichen;
 import java.io.IOException;
 import java.util.Hashtable;
 
-// The class KennzeichenHash provides a Hash with Licence Plates Code
-public class KennzeichenHash extends Hashtable {
-    //kind of preprocessor-variable to build with/withour old plates
-    static final boolean FULL = true;
 
-    //The default constructor adds all active Licence Plates
-    public KennzeichenHash() {
-        //call inherited constructor and set number of elements
-        super((FULL) ? 1000 : 500);
-        add_Plates();
+/** The class KennzeichenHash provides a Hash with Licence Plates Code.
+ * 
+ * The license plates are read from a resource-file that is packaged and
+ * deployed with the .jar file.
+ */
+public class KennzeichenHash extends Hashtable {
+    /** Save the message-string of the last exception into this */
+    private String lastError = null;
+
+    /** Adds all license Plates from a file in the jar. 
+     * 
+     * @param dataset Name of the data that should be read (normally an ISO country-code)
+     */
+    public KennzeichenHash(String dataset) {
+        // call inherited constructor and set number of elements
+        super(500);
+        addPlates(dataset);
     }
 
-    //The function "find" searches the parameter "search_for"
-    public synchronized String find(String search_for) {
+    /** Searches the Hash for a given plate and returns a string with the full information.
+     * 
+     * @param plate The plate to get information for
+     * @return A String with plate-information
+     */
+    public synchronized String getPlateInformation(String plate) {
+        if (lastError != null) {
+            return "Error while reading plates:\n" + lastError;
+        }
+
         String result, strland;
         try {
-            result = (String)get(search_for.toUpperCase());
+            result = (String)get(plate.toUpperCase());
             if (result == null) {
                 return null;
             }
@@ -120,13 +136,18 @@ public class KennzeichenHash extends Hashtable {
             default:
                 strland = "";
         }
+
         return result.substring(0, pos) + strland;
     }
 
-    private synchronized void add_Plates() {
+    /** Add all plates from a file to the Hash
+     * 
+     * @param dataset Name of the data that should be read
+     */
+    private synchronized void addPlates(String dataset) {
         try {
             String line;
-            LinedResourceInputStream inp = new LinedResourceInputStream("/de.dat");
+            LinedResourceInputStream inp = new LinedResourceInputStream("/" + dataset + ".dat");
 
             while ((line = inp.readLine()) != null) {
                 int pos = line.indexOf(";");
@@ -135,7 +156,7 @@ public class KennzeichenHash extends Hashtable {
                 put(abbr, value);
             }
         } catch (IOException ex) {
-            throw new RuntimeException();
+            lastError = ex.getMessage();
         }
     }
 }

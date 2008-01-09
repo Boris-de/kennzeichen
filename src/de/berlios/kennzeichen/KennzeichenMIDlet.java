@@ -48,12 +48,13 @@ public class KennzeichenMIDlet extends MIDlet implements CommandListener {
     private StringItem field_Output;
     private KennzeichenHash myKennzeichenHash;
 
+    /** Creates the GUI-elements and the Hash */
     public KennzeichenMIDlet() {
-        //Create Fields
+        // Create Fields
         field_Output = new StringItem(null, "");
         field_Kennzeichen = new TextField("", "", 3, TextField.ANY);
 
-        //Create GUI
+        // Create GUI
         myMainForm = new Form("Kennzeichen");
         myMainForm.append(new StringItem(null, "Kennzeichen"));
         myMainForm.append(field_Kennzeichen);
@@ -63,34 +64,51 @@ public class KennzeichenMIDlet extends MIDlet implements CommandListener {
         myMainForm.addCommand(new Command("Hilfe", Command.HELP, 2));
         myMainForm.setCommandListener(this);
 
-        myKennzeichenHash = new KennzeichenHash();
+        myKennzeichenHash = new KennzeichenHash("de");
     }
 
+    /** Implemented method for MIDlet */
     public void startApp() {
         disp = Display.getDisplay(this);
+        
         if (paused) {
             paused = false;
         }
+        
         disp.setCurrent(myMainForm);
     }
 
+    /** Implemented method for MIDlet
+     * 
+     * @param unconditional unused
+     */
     public void destroyApp(boolean unconditional) {
         myKennzeichenHash.clear();
     }
 
+    /** Implemented method for MIDlet
+     * 
+     * Sets paused. This is cleared in startApp()
+     */
     public void pauseApp() {
         paused = true;
     }
 
-    public void commandAction(Command c, Displayable s) {
-        switch (c.getCommandType()) {
+    /** Implements the CommandListener functionality of this Form
+     * 
+     * @param command The command that was put into the Display
+     * @param s A displayable (for override-completness)
+     */
+    public void commandAction(Command command, Displayable s) {
+        switch (command.getCommandType()) {
             case Command.OK:
                 String Kennzeichen = new String(field_Kennzeichen.getString());
                 if (Kennzeichen.length() > 0) {
-                    //diplay status-message
+                    // diplay status-message
                     field_Output.setText("Suche nach: " + Kennzeichen);
-                    //search and display
-                    String result = myKennzeichenHash.find(Kennzeichen);
+
+                    // search and display
+                    String result = myKennzeichenHash.getPlateInformation(Kennzeichen);
                     if (result == null) {
                         field_Output.setText("Nicht gefunden!");
                     } else {

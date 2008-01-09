@@ -42,7 +42,10 @@ public class AboutBox extends Form implements CommandListener {
     private Displayable oldForm;
     private Display mainDisp;
 
-    /** Creates a new instance of AboutBox */
+    /** Creates a new instance of AboutBox
+     * 
+     * @param disp The display on which the box should be shown
+     */
     public AboutBox(Display disp) {
         super("Hilfe"); //call inherited constructor
         append(new StringItem(null, "Zur Suche einfach das Kennzeichen in die Box eingeben und mit OK best\u00E4tigen.\n"));
@@ -54,9 +57,13 @@ public class AboutBox extends Form implements CommandListener {
         mainDisp = disp;
     }
 
-    /** Implements the CommandListener functionality of this Form */
-    public void commandAction(Command c, Displayable s) {
-        switch (c.getCommandType()) {
+    /** Implements the CommandListener functionality of this Form
+     * 
+     * @param command The command that was put into the Display
+     * @param s unused (for override-completness)
+     */
+    public void commandAction(Command command, Displayable s) {
+        switch (command.getCommandType()) {
             case Command.OK:
                 mainDisp.setCurrent(oldForm);
                 break;
