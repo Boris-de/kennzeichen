@@ -70,11 +70,11 @@ public class KennzeichenMIDlet extends MIDlet implements CommandListener {
     /** Implemented method for MIDlet */
     public void startApp() {
         disp = Display.getDisplay(this);
-        
+
         if (paused) {
             paused = false;
         }
-        
+
         disp.setCurrent(myMainForm);
     }
 

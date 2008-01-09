@@ -59,11 +59,12 @@ public class KennzeichenHash extends Hashtable {
      * @return A String with plate-information
      */
     public synchronized String getPlateInformation(String plate) {
+        String result, strland;
+
         if (lastError != null) {
             return "Error while reading plates:\n" + lastError;
         }
 
-        String result, strland;
         try {
             result = (String)get(plate.toUpperCase());
             if (result == null) {
@@ -73,10 +74,10 @@ public class KennzeichenHash extends Hashtable {
             return null;
         }
 
-        int land;
-        int pos = result.indexOf(";");
+        int land, pos = result.indexOf(";");
         try {
-            land = Integer.parseInt(result.substring(pos + 1));
+            // if found generate an integer, otherwise set to 0
+            land = (pos == -1) ? 0 : Integer.parseInt(result.substring(pos + 1));
         } catch (NumberFormatException ex) {
             land = 0;
         }
@@ -150,7 +151,14 @@ public class KennzeichenHash extends Hashtable {
             LinedResourceInputStream inp = new LinedResourceInputStream("/" + dataset + ".dat");
 
             while ((line = inp.readLine()) != null) {
+                if (line.indexOf("#") == 0) {
+                    // comment-line
+                    continue;
+                }
                 int pos = line.indexOf(";");
+                if (pos == -1) {
+                    lastError = "At least one line was not parseable";
+                }
                 String abbr = line.substring(0, pos);
                 String value = line.substring(pos + 1);
                 put(abbr, value);

@@ -27,7 +27,6 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
-
 package de.berlios.kennzeichen;
 
 //import com.sun.cldc.io.ResourceInputStream;
@@ -81,12 +80,22 @@ public class LinedResourceInputStream {
         boolean done = false;
 
         while (!done) {
+            // read one character
             int c = reader.read(ch);
-            if (ch[0] == '\n') {
+            if (c == 0) {
+                // nothing read (if this ever happens on resources?)
+                continue;
+            } else if (ch[0] == '\n') {
                 done = true;
             } else if (c == -1) {
-                return null;
+                // EOF occured. if buffer is empty return null
+                if (buffer.length() == 0) {
+                    return null;
+                } else {
+                    done = true;
+                }
             } else if (ch[0] != '\r') {
+                // append everything that is not \r
                 buffer.append(ch[0]);
             }
         }
