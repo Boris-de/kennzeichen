@@ -102,7 +102,7 @@ public class KennzeichenMIDlet extends MIDlet implements CommandListener {
     public void commandAction(Command command, Displayable s) {
         switch (command.getCommandType()) {
             case Command.OK:
-                String Kennzeichen = new String(field_Kennzeichen.getString());
+                String Kennzeichen = field_Kennzeichen.getString();
                 if (Kennzeichen.length() > 0) {
                     // diplay status-message
                     field_Output.setText("Suche nach: " + Kennzeichen);

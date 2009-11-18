@@ -60,7 +60,7 @@ public class LinedResourceInputStream {
      * @throws java.io.UnsupportedEncodingException  if <em>charset</em> was not valid
      */
     public LinedResourceInputStream(String resource, String charset) throws IOException, UnsupportedEncodingException {
-        inp = getClass().getResourceAsStream(resource);
+        inp = LinedResourceInputStream.class.getResourceAsStream(resource);
         if (inp == null) {
             throw new IOException("File not found!");
         }
