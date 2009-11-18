@@ -39,18 +39,21 @@ import java.util.Hashtable;
  * The license plates are read from a resource-file that is packaged and
  * deployed with the .jar file.
  */
-public class KennzeichenHash extends Hashtable {
+public class KennzeichenHash {
     /** Save the message-string of the last exception into this */
     private String lastError = null;
+    private final Hashtable hash = new Hashtable(500);
 
     /** Adds all license Plates from a file in the jar. 
      * 
      * @param dataset Name of the data that should be read (normally an ISO country-code)
      */
     public KennzeichenHash(String dataset) {
-        // call inherited constructor and set number of elements
-        super(500);
         addPlates(dataset);
+    }
+
+    public void clear() {
+        hash.clear();
     }
 
     /** Searches the Hash for a given plate and returns a string with the full information.
@@ -66,7 +69,7 @@ public class KennzeichenHash extends Hashtable {
         }
 
         try {
-            result = (String)get(plate.toUpperCase());
+            result = (String)hash.get(plate.toUpperCase());
             if (result == null) {
                 return null;
             }
@@ -161,7 +164,7 @@ public class KennzeichenHash extends Hashtable {
                 }
                 String abbr = line.substring(0, pos);
                 String value = line.substring(pos + 1);
-                put(abbr, value);
+                hash.put(abbr, value);
             }
         } catch (IOException ex) {
             lastError = ex.getMessage();
