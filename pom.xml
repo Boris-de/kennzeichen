@@ -175,6 +175,16 @@
     </developer>
   </developers>
 
+  <contributors>
+    <contributor>
+      <name>Udo Roscher</name>
+      <roles>
+        <role>data</role>
+      </roles>
+      <timezone>+1</timezone>
+    </contributor>
+  </contributors>
+
   <issueManagement>
     <system>Berlios</system>
     <url>http://developer.berlios.de/bugs/?group_id=2725</url>

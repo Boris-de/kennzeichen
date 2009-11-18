@@ -84,6 +84,7 @@ EBE;Ebersberg;1
 ED;Erding;1
 EE;Elbe-Elster;4
 EF;Erfurt;16
+EH;Eisenhüttenstadt (auslaufend);4
 EI;Eichstätt;1
 EIC;Eichsfeld;16
 EL;Emsland;9
@@ -94,6 +95,7 @@ EN;Ennepe-Ruhr-Kreis;10
 ER;Erlangen;1
 ERB;Odenwaldkreis;7
 ERH;Erlangen-Höchstadt;1
+ERZ;Erzgebirgskreis;12
 ES;Esslingen an der Neckar;2
 ESW;Werra-Meißner-Kreis;7
 F;Frankfurt am Main;7
@@ -170,9 +172,11 @@ HY;Hoyerswerda;12
 HZ;Harz;13
 IGB;St. Ingbert;14
 IK;Ilm-Kreis;16
+IL;Ilmenau (auslaufend);16
 IN;Ingolstadt;1
 IZ;Steinburg;15
 J;Jena;16
+JE;Jessen (auslaufend);13
 JL;Jerichower Land;13
 K;Köln;10
 KA;Karlsruhe;2
@@ -361,6 +365,8 @@ SW;Schweinfurt;1
 SZ;Salzgitter;9
 SU;Rhein-Sieg-Kreis;10
 TBB;Main-Tauber-Kreis;2
+TDO;Torgau Delitzsch-Oschatz;12
+TET;Teterow (auslaufend);8
 TF;Teltow-Fläming;4
 TIR;Tirschenreuth;1
 TO;Torgau-Oschatz;12
@@ -431,3 +437,8 @@ NRW;Nordrhein-Westfalen (Landtag/Polizei);0
 RPL;Rheinland-Pfalz (Landtag);0
 SAL;Saarland (Landtag);0
 SH;Schleswig Holstein (Landtag);0
+X;Bundeswehr für NATO-Hauptquartiere;20
+Y;Bundeswehr;20
+AD;Privatfahrzeug der amerikanischen Streitkräfte;20
+AF;Privatfahrzeug der amerikanischen Streitkräfte;20
+HK;Privatfahrzeug der amerikanischen Streitkräfte;20
