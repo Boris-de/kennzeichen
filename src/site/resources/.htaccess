@@ -1,0 +1,7 @@
+<files "feed.atom">
+  ForceType 'application/atom+xml; charset=UTF-8'
+</files>
+
+<files "feed.rss">
+  ForceType 'application/rss+xml; charset=UTF-8'
+</files>

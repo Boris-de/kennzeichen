@@ -1,0 +1,13 @@
+ul#logos-powered img {
+  margin-bottom: 1px;
+  margin-top: 3px;
+}
+
+ul#logos-feeds img {
+  margin-bottom: 1px;
+  margin-top: 3px;
+}
+
+ul#logos-footer li {
+  display: inline;
+}

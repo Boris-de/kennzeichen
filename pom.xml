@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <name>KennzeichenMidlet</name>
+  <groupId>de.berlios.kennzeichen</groupId>
+  <artifactId>KennzeichenMidlet</artifactId>
+  <version>0.3-SNAPSHOT</version>
+
+  <properties>
+    <j2me.midlet.vendor>${project.organization.name}</j2me.midlet.vendor>
+    <j2me.midlet.name>${project.name}</j2me.midlet.name>
+    <j2me.midlet.version>${version}</j2me.midlet.version>
+    <j2me.midlet.configuration>CLDC-1.0</j2me.midlet.configuration>
+    <j2me.midlet.profile>MIDP-1.0</j2me.midlet.profile>
+
+    <javame.version>2.0.3</javame.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.microemu</groupId>
+      <artifactId>microemulator</artifactId>
+      <scope>provided</scope>
+      <version>${javame.version}</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.3</source>
+          <target>1.1</target>
+          <encoding>UTF-8</encoding>
+          <sourceEncoding>UTF-8</sourceEncoding>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>com.pyx4me</groupId>
+        <artifactId>j2me-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>package</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <useWtkLibs>false</useWtkLibs>
+          <proguardPreverify>true</proguardPreverify>
+          <proguardInclude>${basedir}/proguard.conf</proguardInclude>
+          <proguard>true</proguard>
+          <obfuscate>true</obfuscate>
+          <midlets>
+            <MIDlet>
+              <name>KennzeichenMIDlet</name>
+              <icon>/kennzeichen.png</icon>
+              <class>de.berlios.kennzeichen.KennzeichenMIDlet</class>
+            </MIDlet>
+          </midlets>
+          <libs>
+            <lib>${settings.localRepository}/org/microemu/cldcapi11/${javame.version}/cldcapi11-${javame.version}.jar</lib>
+            <lib>${settings.localRepository}/org/microemu/midpapi20/${javame.version}/midpapi20-${javame.version}.jar</lib>
+          </libs>
+          <dependencies>
+            <dependency>
+              <groupId>org.microemu</groupId>
+              <artifactId>microemulator</artifactId>
+              <exclude>true</exclude>
+            </dependency>
+          </dependencies>
+        </configuration>
+        <dependencies>
+          <dependency>
+            <groupId>org.microemu</groupId>
+            <artifactId>cldcapi11</artifactId>
+            <version>${javame.version}</version>
+          </dependency>
+          <dependency>
+            <groupId>org.microemu</groupId>
+            <artifactId>midpapi20</artifactId>
+            <version>${javame.version}</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <configuration>
+          <templateFile>${basedir}/src/site/site.vm</templateFile>
+          <locales>en</locales>
+          <inputencoding>UTF-8</inputencoding>
+          <outputEncoding>UTF-8</outputEncoding>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+			
+  <reporting>
+    <plugins>
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <configuration>
+          <linksource>true</linksource>
+          <links>
+            <link>http://java.sun.com/javase/6/docs/api/</link>
+          </links>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>cobertura-maven-plugin</artifactId>
+        <configuration>
+          <formats>
+            <format>html</format>
+          </formats>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+        <configuration>
+          <xmlOutput>false</xmlOutput>
+          <threshold>Low</threshold>
+          <effort>Max</effort>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId> 
+        <artifactId>maven-project-info-reports-plugin</artifactId> 
+        <configuration> 
+          <dependencyLocationsEnabled>false</dependencyLocationsEnabled> 
+        </configuration> 
+      </plugin>
+    </plugins>
+  </reporting>
+
+  <scm>
+    <url>http://svn.berlios.de/wsvn/kennzeichen</url>
+    <connection>scm:svn:http://svn.berlios.de/svnroot/repos/kennzeichen/trunk</connection>
+    <developerConnection>scm:svn:https://svn.berlios.de/svnroot/repos/kennzeichen/trunk</developerConnection>
+  </scm>
+
+  <licenses>
+    <license>
+      <name>BSD-like</name>
+      <url>COPYING</url>
+    </license>
+    <license>
+      <name>Homepage license</name>
+      <url>COPYING-site</url>
+    </license>
+  </licenses>
+
+  <organization>
+    <name>kennzeichen.berlios.de</name>
+  </organization>
+
+  <developers>
+    <developer>
+      <id>boris</id>
+      <name>Boris</name>
+      <email>http://preview.tinyurl.com/yju6ofd</email>
+      <roles>
+        <role>developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </developer>
+  </developers>
+
+  <issueManagement>
+    <system>Berlios</system>
+    <url>http://developer.berlios.de/bugs/?group_id=2725</url>
+  </issueManagement>
+
+  <distributionManagement>
+    <site>
+      <id>kennzeichen.berlios.de</id>
+      <url>scpexe://shell.berlios.de/home/groups/kennzeichen/htdocs/test</url>
+    </site>
+  </distributionManagement>
+</project>

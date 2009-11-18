@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de">
+	<title>Kennzeichen-Finder</title>
+	<subtitle type="text">Ein Programm, dass nach Kennzeichen sucht</subtitle>
+	<icon>/favicon.ico</icon>
+	<updated>2005-10-20T21:24:21Z</updated>
+	<generator uri="http://www.vim.org/" version="6.4">VIM</generator>
+	<link rel="alternate" type="application/xhtml+xml" href="/" />
+	<link rel="self" type="application/atom+xml" href="/feed.atom"/>
+	<id>http://kennzeichen.berlios.de/</id>
+	<author>
+		<name>Boris</name>
+		<uri>http://kennzeichen.berlios.de/</uri>
+	</author>
+	
+	<entry>
+		<title>Version 0.2</title>
+		<link rel="self" type="application/xhtml+xml" href="/" />
+		<id>http://kennzeichen.berlios.de/#2</id>
+		<updated>2005-09-17T00:00:00Z</updated>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				Die zweite Version (0.2) ist veröffentlicht und steht auf der Projektseite zum Download. Änderungen zur letzten Version:
+				<ul><li>Umlaute in Kennzeichen und Beschreibungstexten sollten jetzt problemlos funktionieren.</li>
+				<li>Ein kleines Logo wird jetzt von Geräten angezeigt, die es unterstützen.</li></ul>
+			</div>
+		</content>
+	</entry>
+	
+	<entry>
+		<title>Version 0.1</title>
+		<link rel="self" type="application/xhtml+xml" href="/" />
+		<id>http://kennzeichen.berlios.de/#1</id>
+		<updated>2005-05-16T00:00:00Z</updated>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				Die erste Version (0.1) ist veröffentlicht und steht auf der Projektseite zum <a href="http://developer.berlios.de/project/filelist.php?group_id=2725">Download</a>. Es werden nur Kennzeichen von der Suche unterstüzt, die noch vergeben werden.
+			</div>
+		</content>
+	</entry>
+</feed>

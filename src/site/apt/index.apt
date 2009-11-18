@@ -1,0 +1,47 @@
+Java-Programm für die Kennzeichen-Suche
+
+* Was ist das genau?
+
+ "Kennzeichen (de)" ist ein sogenanntes Java MIDlet, also ein Programm, dass dem MDIP entspricht. Das heisst, dass man das Programm auf Java-fähigen Handys und anderen mobilen Endgeräten nutzen kann.
+
+* Und was macht es?
+
+ Wie der Name bereits andeutet kann das Programm nach deutschen Kennzeichen suchen.
+
+* Download
+
+ Eine Download-Möglichkeit gibt es auf der {{{http://developer.berlios.de/project/showfiles.php?group_id=2725}Projekt-Seite}} bei Berlios. Einfach die aktuelle .jar-Datei runterladen und auf das Handy kopieren.
+
+* Bildschirmfotos
+
+[images/kennzeichen1.png] Ein Screenshot des Programms, der zeigt wie auf eine Suche ein Ergebnis angezeigt wird
+
+[images/kennzeichen2.jpg] Ein Foto eines K500i, auf welchem das Suchergebnis angezeigt wird
+
+* History
+
+ * <<17.09.2005>>: Die zweite Version (0.2) ist veröffentlicht und steht auf der Projektseite zum {{{http://prdownload.berlios.de/kennzeichen/kennzeichen-0.2.jar}Download}}.
+
+   Änderungen zur letzten Version: 
+
+   * Umlaute in Kennzeichen und Beschreibungstexten sollten jetzt problemlos funktionieren.
+
+   * Ein kleines Logo wird jetzt von Geräten angezeigt, die es unterstützen.
+
+ * <<16.05.2005>>: Die erste Version (0.1) ist veröffentlicht und steht auf der Projektseite zum {{{http://prdownload.berlios.de/kennzeichen/kennzeichen-0.1.jar}Download}}. Es werden nur Kennzeichen von der Suche unterstüzt, die noch vergeben werden.
+
+ * Eine erste private Vorabversion (0.0) basierte noch auf Daten aus der deutschen Wikipedia und wurde nur im Quellcode veröffentlicht. Durch die Inkompatiblität zwischen verschiedenen Lizenzen und daraus resultierenden Problemen bezüglicher der Lizensierung eines Mischproduktes, habe ich mich gegen die Nutzung dieser Daten in einem Binärpaket entschieden. Die erste öffentliche Version (0.1) basierte dann auf einer eigenen Liste.
+
+* Lizenz
+
+ Der Kennzeichen Finder steht unter einer {{{./license.html}BSD-ähnlichen Lizenz}}.
+
+ Natürlich freue ich mich trotz (oder gerade wegen) der freien Lizenz über jede {{{http://mailhide.recaptcha.net/d?k=0168GZFQSfmpy4Ysd6bt8mCA==&c=TzxXmlFGh7NAAp2H3sWP9nQHgous1bmyy4HHED503yo=}Nachricht}} eines Benutzers. Wer das Programm sinnvoll erweitert die Erweiterung hier zur Verfügung stellen möchte, kann sich natürlich auch gerne bei mir melden.
+
+* Quellcode
+
+ Da der Kennzeichen Finder Open Source Software ist, gibt es den {{{http://svn.berlios.de/viewcvs/kennzeichen/trunk/}Quellcode}} natürlich auch.
+
+* Kontakt
+
+ Fragen, Wünsche, Anregungen und Kritik nehme ich gerne per {{{http://mailhide.recaptcha.net/d?k=0168GZFQSfmpy4Ysd6bt8mCA==&c=TzxXmlFGh7NAAp2H3sWP9nQHgous1bmyy4HHED503yo=}Mail}} entgegen.

@@ -1,0 +1,6 @@
+The contents of the folder src/site may have different licenses than the tool
+itself.
+
+Especially the file site.vm is derived Apache Maven Doxia, which is licensed
+under the terms of the Apache Software License, Version 2.0 by the Apache
+Software Foundation. See http://www.apache.org/licenses/LICENSE-2.0 for details
