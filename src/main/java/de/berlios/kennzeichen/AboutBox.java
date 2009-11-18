@@ -29,7 +29,6 @@
  */
 package de.berlios.kennzeichen;
 
-
 import javax.microedition.lcdui.Command;
 import javax.microedition.lcdui.CommandListener;
 import javax.microedition.lcdui.Display;
@@ -37,10 +36,9 @@ import javax.microedition.lcdui.Displayable;
 import javax.microedition.lcdui.Form;
 import javax.microedition.lcdui.StringItem;
 
-
 public class AboutBox extends Form implements CommandListener {
-    private Displayable oldForm;
-    private Display mainDisp;
+    private final Displayable oldForm;
+    private final Display mainDisp;
 
     /** Creates a new instance of AboutBox
      * 

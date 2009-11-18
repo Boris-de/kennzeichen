@@ -29,19 +29,17 @@
  */
 package de.berlios.kennzeichen;
 
-//import com.sun.cldc.io.ResourceInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 
-
 /** Class that wraps around InputStreamReader to provide readLine()
  * 
  */
 public class LinedResourceInputStream {
-    private InputStream inp;
-    private InputStreamReader reader;
+    private final InputStream inp;
+    private final InputStreamReader reader;
 
     /** Constructor for an UTF-8 resource.
      * 

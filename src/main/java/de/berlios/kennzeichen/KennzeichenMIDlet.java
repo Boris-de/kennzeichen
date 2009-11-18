@@ -29,7 +29,6 @@
  */
 package de.berlios.kennzeichen;
 
-
 import javax.microedition.lcdui.Command;
 import javax.microedition.lcdui.CommandListener;
 import javax.microedition.lcdui.Display;
@@ -39,14 +38,13 @@ import javax.microedition.lcdui.StringItem;
 import javax.microedition.lcdui.TextField;
 import javax.microedition.midlet.MIDlet;
 
-
 public class KennzeichenMIDlet extends MIDlet implements CommandListener {
-    private Form myMainForm;
-    private Display disp;
-    private boolean paused = false;
-    private TextField field_Kennzeichen;
-    private StringItem field_Output;
-    private KennzeichenHash myKennzeichenHash;
+    private final Form myMainForm;
+    private volatile Display disp;
+    private volatile boolean paused = false;
+    private final TextField field_Kennzeichen;
+    private final StringItem field_Output;
+    private final KennzeichenHash myKennzeichenHash;
 
     /** Creates the GUI-elements and the Hash */
     public KennzeichenMIDlet() {

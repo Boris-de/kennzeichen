@@ -29,10 +29,8 @@
  */
 package de.berlios.kennzeichen;
 
-
 import java.io.IOException;
 import java.util.Hashtable;
-
 
 /** The class KennzeichenHash provides a Hash with Licence Plates Code.
  * 
@@ -41,7 +39,7 @@ import java.util.Hashtable;
  */
 public class KennzeichenHash {
     /** Save the message-string of the last exception into this */
-    private String lastError = null;
+    private String lastError = null; // @GuardedBy("this")
     private final Hashtable hash = new Hashtable(500);
 
     /** Adds all license Plates from a file in the jar. 
