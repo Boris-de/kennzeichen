@@ -81,7 +81,7 @@ public class LinedResourceInputStream {
             // read one character
             int c = reader.read(ch);
             if (c == 0) {
-                // nothing read (if this ever happens on resources?)
+                // nothing to read (if this ever happens on resources?)
                 continue;
             } else if (ch[0] == '\n') {
                 done = true;
