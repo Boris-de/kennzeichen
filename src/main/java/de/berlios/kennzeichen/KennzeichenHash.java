@@ -34,6 +34,7 @@ import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 /** The class KennzeichenHash provides a Hash with Licence Plates Code.
  * 
@@ -43,18 +44,21 @@ import java.util.List;
 public class KennzeichenHash {
     /** Save the message-strings of the last exceptions into this */
     private final List lastErrors = new LinkedList(); // @GuardedBy("this")
-    private final Hashtable hash = new Hashtable(500);
+    private final Map hashPlates;
+    private final Map hashCounties;
 
     /** Adds all license Plates from a file in the jar. 
      * 
      * @param dataset Name of the data that should be read (normally an ISO country-code)
      */
     public KennzeichenHash(String dataset) {
-        addPlates(dataset);
+        hashPlates = initHashFromFile('/' + dataset + ".dat", 500);
+        hashCounties = initHashFromFile('/' + dataset + "-counties.dat", 30);
     }
 
     public void clear() {
-        hash.clear();
+        hashPlates.clear();
+        hashCounties.clear();
     }
 
     /** Searches the Hash for a given plate and returns a string with the full information.
@@ -66,7 +70,7 @@ public class KennzeichenHash {
     public synchronized String getPlateInformation(String plate) {
         String result;
 
-        result = (String) hash.get(plate.toUpperCase());
+        result = (String) hashPlates.get(plate.toUpperCase());
         final String text = (result == null)? null : getPlateText(result);
 
         if (lastErrors.size() > 0) {
@@ -84,85 +88,27 @@ public class KennzeichenHash {
         }
     }
 
-    private final String getPlateText(String result) {
-        int land;
-        int pos = result.indexOf(";");
-        try {
-            // if found generate an integer, otherwise set to 0
-            land = (pos == -1) ? 0 : Integer.parseInt(result.substring(pos + 1));
-        } catch (NumberFormatException ex) {
-            land = 0;
-        }
+    private final String getPlateText(String plate) {
+        int pos = plate.indexOf(";");
+        String county = (pos != -1) ? (String) hashCounties.get(plate.substring(pos + 1)) : null;
 
-        final String strland;
-        switch (land) {
-            case 1:
-                strland = " (Bayern)";
-                break;
-            case 2:
-                strland = " (Baden-W\u00FCrttemberg)";
-                break;
-            case 3:
-                strland = " (Berlin)";
-                break;
-            case 4:
-                strland = " (Brandenburg)";
-                break;
-            case 5:
-                strland = " (Bremen)";
-                break;
-            case 6:
-                strland = " (Hamburg)";
-                break;
-            case 7:
-                strland = " (Hessen)";
-                break;
-            case 8:
-                strland = " (Mecklenburg-Vorpommern)";
-                break;
-            case 9:
-                strland = " (Niedersachsen)";
-                break;
-            case 10:
-                strland = " (Nordrhein-Westfalen)";
-                break;
-            case 11:
-                strland = " (Rheinland-Pfalz)";
-                break;
-            case 12:
-                strland = " (Sachsen)";
-                break;
-            case 13:
-                strland = " (Sachsen-Anhalt)";
-                break;
-            case 14:
-                strland = " (Saarland)";
-                break;
-            case 15:
-                strland = " (Schleswig-Holstein)";
-                break;
-            case 16:
-                strland = " (Th\u00FCringen)";
-                break;
-            case 20:
-                strland = " (Sonderkennzeichen)";
-                break;
-            default:
-                strland = "";
+        StringBuffer result = new StringBuffer(32);
+        result.append((pos == -1) ? plate : plate.substring(0, pos));
+        if (county != null) {
+            result.append(" (").append(county).append(')');
         }
-
-        String city = (pos == -1) ? result : result.substring(0, pos);
-        return city + strland;
+        return result.toString();
     }
 
     /** Add all plates from a file to the Hash
      * 
      * @param dataset Name of the data that should be read
      */
-    private synchronized void addPlates(String dataset) {
+    private synchronized Map initHashFromFile(String path, int initialSize) {
+        Map result = new Hashtable(initialSize);
         try {
             String line;
-            LinedResourceInputStream inp = new LinedResourceInputStream("/" + dataset + ".dat");
+            LinedResourceInputStream inp = new LinedResourceInputStream(path);
 
             while ((line = inp.readLine()) != null) {
                 if (line.indexOf("#") == 0) {
@@ -175,11 +121,12 @@ public class KennzeichenHash {
                 } else {
                     String abbr = line.substring(0, pos);
                     String value = line.substring(pos + 1);
-                    hash.put(abbr, value);
+                    result.put(abbr, value);
                 }
             }
         } catch (IOException ex) {
             lastErrors.add(ex.getMessage());
         }
+        return result;
     }
 }

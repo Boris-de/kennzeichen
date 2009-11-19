@@ -50,7 +50,7 @@ public class KennzeichenHashTest extends TestCase {
 
     public void testMissingInputData() {
         KennzeichenHash kh = new KennzeichenHash("xx");
-        assertEquals("\nError while reading plates:\nFile not found!", kh.getPlateInformation("AA"));
+        assertEquals("\nError while reading plates:\nFile not found!\nFile not found!", kh.getPlateInformation("AA"));
         assertNull(kh.getPlateInformation("XX")); // cleared now
     }
 
