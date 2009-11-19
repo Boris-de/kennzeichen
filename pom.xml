@@ -149,9 +149,9 @@
   </reporting>
 
   <scm>
-    <url>http://svn.berlios.de/wsvn/kennzeichen</url>
-    <connection>scm:svn:http://svn.berlios.de/svnroot/repos/kennzeichen/trunk</connection>
-    <developerConnection>scm:svn:https://svn.berlios.de/svnroot/repos/kennzeichen/trunk</developerConnection>
+    <url>http://hg.berlios.de/repos/kennzeichen</url>
+    <connection>scm:hg:http://hg.berlios.de/repos/kennzeichen</connection>
+    <developerConnection>scm:hg:http://hg.berlios.de/repos/kennzeichen</developerConnection>
   </scm>
 
   <licenses>
@@ -199,7 +199,7 @@
   <distributionManagement>
     <site>
       <id>kennzeichen.berlios.de</id>
-      <url>scpexe://shell.berlios.de/home/groups/kennzeichen/htdocs/test</url>
+      <url>scpexe://shell.berlios.de/home/groups/kennzeichen/htdocs/site</url>
     </site>
   </distributionManagement>
 </project>
