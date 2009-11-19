@@ -7,7 +7,8 @@
     </links>
 
     <menu name="Kennzeichen">
-      <item name="Welcome" href="index.html" />
+      <item name="Willkommen" href="index.html" />
+      <item name="Helfer-Anleitung" href="contributors-guide.html" />
       <item name="Download" href="http://prdownload.berlios.de/kennzeichen/kennzeichen-0.2.jar" />
     </menu>
 
