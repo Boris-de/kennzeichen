@@ -37,11 +37,32 @@ import junit.framework.TestCase;
  * @author boris
  */
 public class KennzeichenHashTest extends TestCase {
-    public void test1() {
+    public void testNormalBehavior() {
         KennzeichenHash kh = new KennzeichenHash("de");
         assertEquals("Ostalbkreis (Baden-Württemberg)", kh.getPlateInformation("AA"));
         assertEquals("Ostalbkreis (Baden-Württemberg)", kh.getPlateInformation("aA"));
         assertEquals("Zweibrücken (Rheinland-Pfalz)", kh.getPlateInformation("ZW"));
         assertEquals("Zweibrücken (Rheinland-Pfalz)", kh.getPlateInformation("zw"));
+        assertNull(kh.getPlateInformation("XX"));
+        kh.clear();
+        assertNull(kh.getPlateInformation("ZW")); // should be missing now
+    }
+
+    public void testMissingInputData() {
+        KennzeichenHash kh = new KennzeichenHash("xx");
+        assertEquals("\nError while reading plates:\nFile not found!", kh.getPlateInformation("AA"));
+        assertNull(kh.getPlateInformation("XX")); // cleared now
+    }
+
+    public void testPlatesDefect1() {
+        KennzeichenHash kh = new KennzeichenHash("plates_defect1");
+        assertEquals("Test", kh.getPlateInformation("AA")); // with invalid county-code
+        assertEquals("Test2", kh.getPlateInformation("BB")); // without county
+    }
+
+    public void testPlatesDefect2() {
+        KennzeichenHash kh = new KennzeichenHash("plates_defect2");
+        assertEquals("TestX\nError while reading plates:\nAt least one line was not parseable", kh.getPlateInformation("XX"));
+        assertEquals("TestX", kh.getPlateInformation("XX"));
     }
 }

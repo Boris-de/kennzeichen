@@ -80,10 +80,7 @@ public class LinedResourceInputStream {
         while (!done) {
             // read one character
             int c = reader.read(ch);
-            if (c == 0) {
-                // nothing to read (if this ever happens on resources?)
-                continue;
-            } else if (ch[0] == '\n') {
+            if (ch[0] == '\n') {
                 done = true;
             } else if (c == -1) {
                 // EOF occured. if buffer is empty return null

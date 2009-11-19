@@ -31,6 +31,9 @@ package de.berlios.kennzeichen;
 
 import java.io.IOException;
 import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
 
 /** The class KennzeichenHash provides a Hash with Licence Plates Code.
  * 
@@ -38,8 +41,8 @@ import java.util.Hashtable;
  * deployed with the .jar file.
  */
 public class KennzeichenHash {
-    /** Save the message-string of the last exception into this */
-    private String lastError = null; // @GuardedBy("this")
+    /** Save the message-strings of the last exceptions into this */
+    private final List lastErrors = new LinkedList(); // @GuardedBy("this")
     private final Hashtable hash = new Hashtable(500);
 
     /** Adds all license Plates from a file in the jar. 
@@ -58,24 +61,32 @@ public class KennzeichenHash {
      * 
      * @param plate The plate to get information for
      * @return A String with plate-information
+     * @throws NullPointerException If {@code plate == null}
      */
     public synchronized String getPlateInformation(String plate) {
-        String result, strland;
+        String result;
 
-        if (lastError != null) {
-            return "Error while reading plates:\n" + lastError;
-        }
+        result = (String) hash.get(plate.toUpperCase());
+        final String text = (result == null)? null : getPlateText(result);
 
-        try {
-            result = (String)hash.get(plate.toUpperCase());
-            if (result == null) {
-                return null;
+        if (lastErrors.size() > 0) {
+            StringBuilder message = new StringBuilder(text != null ? text : "");
+            message.append("\nError while reading plates:" );
+            Iterator it = lastErrors.iterator();
+            while (it.hasNext()) {
+                message.append('\n').append(it.next());
             }
-        } catch (NullPointerException npe) {
-            return null;
-        }
+            lastErrors.clear();
 
-        int land, pos = result.indexOf(";");
+           return message.toString();
+        } else {
+            return text;
+        }
+    }
+
+    private final String getPlateText(String result) {
+        int land;
+        int pos = result.indexOf(";");
         try {
             // if found generate an integer, otherwise set to 0
             land = (pos == -1) ? 0 : Integer.parseInt(result.substring(pos + 1));
@@ -83,6 +94,7 @@ public class KennzeichenHash {
             land = 0;
         }
 
+        final String strland;
         switch (land) {
             case 1:
                 strland = " (Bayern)";
@@ -139,7 +151,8 @@ public class KennzeichenHash {
                 strland = "";
         }
 
-        return result.substring(0, pos) + strland;
+        String city = (pos == -1) ? result : result.substring(0, pos);
+        return city + strland;
     }
 
     /** Add all plates from a file to the Hash
@@ -158,14 +171,15 @@ public class KennzeichenHash {
                 }
                 int pos = line.indexOf(";");
                 if (pos == -1) {
-                    lastError = "At least one line was not parseable";
+                    lastErrors.add("At least one line was not parseable");
+                } else {
+                    String abbr = line.substring(0, pos);
+                    String value = line.substring(pos + 1);
+                    hash.put(abbr, value);
                 }
-                String abbr = line.substring(0, pos);
-                String value = line.substring(pos + 1);
-                hash.put(abbr, value);
             }
         } catch (IOException ex) {
-            lastError = ex.getMessage();
+            lastErrors.add(ex.getMessage());
         }
     }
 }
