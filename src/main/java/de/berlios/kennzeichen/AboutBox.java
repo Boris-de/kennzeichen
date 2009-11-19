@@ -48,6 +48,7 @@ public class AboutBox extends Form implements CommandListener {
         super("Hilfe"); //call inherited constructor
         append(new StringItem(null, "Zur Suche einfach das Kennzeichen in die Box eingeben und mit OK best\u00E4tigen.\n"));
         append(new StringItem(null, "\nMehr Informationen unter\nhttp://kennzeichen.berlios.de"));
+        append(new StringItem(null, "\nVielen Dank an folgende Helfer:\nUdo Roscher"));
         addCommand(new Command("OK", Command.OK, 0));
         setCommandListener(this);
         oldForm = disp.getCurrent();
