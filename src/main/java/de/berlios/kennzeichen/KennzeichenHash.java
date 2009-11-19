@@ -30,11 +30,10 @@
 package de.berlios.kennzeichen;
 
 import java.io.IOException;
+import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.Vector;
 
 /** The class KennzeichenHash provides a Hash with Licence Plates Code.
  * 
@@ -43,9 +42,9 @@ import java.util.Map;
  */
 public class KennzeichenHash {
     /** Save the message-strings of the last exceptions into this */
-    private final List lastErrors = new LinkedList(); // @GuardedBy("this")
-    private final Map hashPlates;
-    private final Map hashCounties;
+    private final Vector lastErrors = new Vector(); // @GuardedBy("this")
+    private final Hashtable hashPlates;
+    private final Hashtable hashCounties;
 
     /** Adds all license Plates from a file in the jar. 
      * 
@@ -74,13 +73,13 @@ public class KennzeichenHash {
         final String text = (result == null)? null : getPlateText(result);
 
         if (lastErrors.size() > 0) {
-            StringBuilder message = new StringBuilder(text != null ? text : "");
+            StringBuffer message = new StringBuffer(text != null ? text : "");
             message.append("\nError while reading plates:" );
-            Iterator it = lastErrors.iterator();
-            while (it.hasNext()) {
-                message.append('\n').append(it.next());
+            Enumeration en = lastErrors.elements();
+            while (en.hasMoreElements()) {
+                message.append('\n').append(en.nextElement());
             }
-            lastErrors.clear();
+            lastErrors.removeAllElements();
 
            return message.toString();
         } else {
@@ -104,8 +103,8 @@ public class KennzeichenHash {
      * 
      * @param dataset Name of the data that should be read
      */
-    private synchronized Map initHashFromFile(String path, int initialSize) {
-        Map result = new Hashtable(initialSize);
+    private synchronized Hashtable initHashFromFile(String path, int initialSize) {
+        Hashtable result = new Hashtable(initialSize);
         try {
             String line;
             LinedResourceInputStream inp = new LinedResourceInputStream(path);
@@ -117,7 +116,7 @@ public class KennzeichenHash {
                 }
                 int pos = line.indexOf(";");
                 if (pos == -1) {
-                    lastErrors.add("At least one line was not parseable");
+                    lastErrors.addElement("At least one line was not parseable");
                 } else {
                     String abbr = line.substring(0, pos);
                     String value = line.substring(pos + 1);
@@ -125,7 +124,7 @@ public class KennzeichenHash {
                 }
             }
         } catch (IOException ex) {
-            lastErrors.add(ex.getMessage());
+            lastErrors.addElement(ex.getMessage());
         }
         return result;
     }
