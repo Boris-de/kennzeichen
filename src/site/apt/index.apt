@@ -20,6 +20,14 @@ Java-Programm für die Kennzeichen-Suche
 
 * History
 
+ * <<26.11.2009>>: Die dritte Version (0.3) ist veröffentlicht und steht auf der Projektseite zum Download.
+
+   Änderungen zur letzten Version:
+
+   * Einige neue Kennzeichen (Danke an Udo Roscher für seine Einsendung)
+
+   * Viele Änderungen unter der Haube, die den Code flexibler und die Entwicklung einfacher machen.
+
  * <<17.09.2005>>: Die zweite Version (0.2) ist veröffentlicht und steht auf der Projektseite zum {{{http://prdownload.berlios.de/kennzeichen/kennzeichen-0.2.jar}Download}}.
 
    Änderungen zur letzten Version:
