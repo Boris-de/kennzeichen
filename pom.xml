@@ -8,7 +8,7 @@
   <name>Kennzeichen</name>
   <groupId>de.berlios.kennzeichen</groupId>
   <artifactId>KennzeichenMidlet</artifactId>
-  <version>0.3</version>
+  <version>0.4-SNAPSHOT</version>
 
   <properties>
     <j2me.midlet.vendor>${project.organization.name}</j2me.midlet.vendor>
