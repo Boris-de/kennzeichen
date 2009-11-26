@@ -5,7 +5,7 @@
 	<link>http://kennzeichen.berlios.de/</link>
 	<description>Ein Programm, dass nach Kennzeichen sucht</description>
 	<language>de-de</language>
-	<pubDate>Thu, 20 Oct 2005 21:24:21 GMT</pubDate>
+	<pubDate>Thu, 26 Nov 2009 00:00:00 GMT</pubDate>
 
 	<item>
 		<title>Version 0.1</title>
@@ -26,5 +26,17 @@
 		<pubDate>Sat, 17 Sep 2005 00:00:00 GMT</pubDate>
 		<link>http://kennzeichen.berlios.de/</link>
 	</item>
+
+	<item>
+		<title>Version 0.3</title>
+		<description><![CDATA[
+			Die dritte Version (0.3) ist veröffentlicht und steht auf der Projektseite zum <a href="http://developer.berlios.de/project/showfiles.php?group_id=2725&release_id=16953">Download</a>. Änderungen zur letzten Version:
+			<ul><li>Einige neue Kennzeichen (Danke an Udo Roscher für seine Einsendung)</li>
+			<li>Viele Änderungen unter der Haube, die den Code flexibler und die Entwicklung einfacher machen.</li></ul>]]>
+		</description>
+		<pubDate>Thu, 26 Nov 2009 00:00:00 GMT</pubDate>
+		<link>http://kennzeichen.berlios.de/</link>
+	</item>
+
 </channel>
 </rss>

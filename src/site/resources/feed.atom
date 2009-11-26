@@ -3,7 +3,7 @@
 	<title>Kennzeichen-Finder</title>
 	<subtitle type="text">Ein Programm, dass nach Kennzeichen sucht</subtitle>
 	<icon>/favicon.ico</icon>
-	<updated>2005-10-20T21:24:21Z</updated>
+	<updated>2009-11-26T00:00:00Z</updated>
 	<generator uri="http://www.vim.org/" version="6.4">VIM</generator>
 	<link rel="alternate" type="application/xhtml+xml" href="/" />
 	<link rel="self" type="application/atom+xml" href="/feed.atom"/>
@@ -12,6 +12,20 @@
 		<name>Boris</name>
 		<uri>http://kennzeichen.berlios.de/</uri>
 	</author>
+	
+	<entry>
+		<title>Version 0.3</title>
+		<link rel="self" type="application/xhtml+xml" href="/" />
+		<id>http://kennzeichen.berlios.de/#3</id>
+		<updated>2009-11-26T00:00:00Z</updated>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				Die dritte Version (0.3) ist veröffentlicht und steht auf der Projektseite zum <a href="http://developer.berlios.de/project/showfiles.php?group_id=2725&amp;release_id=16953">Download</a>. Änderungen zur letzten Version:
+				<ul><li>Einige neue Kennzeichen (Danke an Udo Roscher für seine Einsendung)</li>
+				<li>Viele Änderungen unter der Haube, die den Code flexibler und die Entwicklung einfacher machen.</li></ul>
+			</div>
+		</content>
+	</entry>
 	
 	<entry>
 		<title>Version 0.2</title>
