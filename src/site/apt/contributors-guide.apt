@@ -1,14 +1,14 @@
-Anleitung für Helfer
+Anleitung fÃ¼r Helfer
 
  Kennzeichen verwendet {{{http://mercurial.selenic.com/}Mercurial}} zur Verwaltung des Quellcodes und der Daten.
  Entwickler finden Information zum Mercurial-Repository unter {{{source-repository.html}Source Repository}}.
 
  Aber auch ohne Programmier-Kenntnisse und ohne Mercurial zu benutzen kann man leicht neue Daten beisteuern.
- Dazu lädt man einfach {{{http://hg.berlios.de/repos/kennzeichen/raw-file/tip/src/main/resources/de.dat}diese Datei}}
- und fügt neue Einträge im gleichen Format hinzu.
- Die Zahl am Ende einer Zeile steht für ein bestimmtes Bundesland, für die möglichen Bundesländer gibt es eine
+ Dazu lÃ¤dt man einfach {{{http://hg.berlios.de/repos/kennzeichen/raw-file/tip/src/main/resources/de.dat}diese Datei}}
+ und fÃ¼gt neue EintrÃ¤ge im gleichen Format hinzu.
+ Die Zahl am Ende einer Zeile steht fÃ¼r ein bestimmtes Bundesland, fÃ¼r die mÃ¶glichen BundeslÃ¤nder gibt es eine
  {{{http://hg.berlios.de/repos/kennzeichen/raw-file/tip/src/main/resources/de-counties.dat}weitere Datei}}.
 
- Die neuen Einträge oder die ganze Datei kann man mir
+ Die neuen EintrÃ¤ge oder die ganze Datei kann man mir
  {{{http://mailhide.recaptcha.net/d?k=0168GZFQSfmpy4Ysd6bt8mCA==&c=TzxXmlFGh7NAAp2H3sWP9nQHgous1bmyy4HHED503yo=}per Mail}}
- schicken. Wer möchte wird dann natürlich bei den {{{team-list.html}Helfern}} erwähnt.
+ schicken. Wer mÃ¶chte wird dann natÃ¼rlich bei den {{{team-list.html}Helfern}} erwÃ¤hnt.

@@ -18,6 +18,8 @@
     <j2me.midlet.profile>MIDP-1.0</j2me.midlet.profile>
 
     <javame.version>2.0.3</javame.version>
+
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
   <dependencies>
