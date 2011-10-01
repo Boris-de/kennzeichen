@@ -2,18 +2,18 @@
 <rss version="2.0">
 <channel>
 	<title>Kennzeichen-Finder</title>
-	<link>http://kennzeichen.berlios.de/</link>
+	<link>http://kennzeichen.code.achterblog.de/</link>
 	<description>Ein Programm, dass nach Kennzeichen sucht</description>
 	<language>de-de</language>
-	<pubDate>Thu, 26 Nov 2009 00:00:00 GMT</pubDate>
+	<pubDate>Thu, 01 Oct 2011 00:00:00 GMT</pubDate>
 
 	<item>
 		<title>Version 0.1</title>
 		<description><![CDATA[
-			Die erste Version (0.1) ist veröffentlicht und steht auf der Projektseite zum <a href="http://developer.berlios.de/project/filelist.php?group_id=2725">Download</a>. Es werden nur Kennzeichen von der Suche unterstüzt, die noch vergeben werden.]]>
+			Die erste Version (0.1) ist veröffentlicht und steht auf der Projektseite zum <a href="https://bitbucket.org/BorisW/kennzeichen-midlet/downloads/Kennzeichen-0.3.jar">Download</a>. Es werden nur Kennzeichen von der Suche unterstüzt, die noch vergeben werden.]]>
 		</description>
 		<pubDate>Mon, 16 May 2005 00:00:00 GMT</pubDate>
-		<link>http://kennzeichen.berlios.de/</link>
+		<link>http://kennzeichen.code.achterblog.de/</link>
 	</item>
 
 	<item>
@@ -24,18 +24,27 @@
 			<li>Ein kleines Logo wird jetzt von Geräten angezeigt, die es unterstützen.</li></ul>]]>
 		</description>
 		<pubDate>Sat, 17 Sep 2005 00:00:00 GMT</pubDate>
-		<link>http://kennzeichen.berlios.de/</link>
+		<link>http://kennzeichen.code.achterblog.de/</link>
 	</item>
 
 	<item>
 		<title>Version 0.3</title>
 		<description><![CDATA[
-			Die dritte Version (0.3) ist veröffentlicht und steht auf der Projektseite zum <a href="http://developer.berlios.de/project/showfiles.php?group_id=2725&release_id=16953">Download</a>. Änderungen zur letzten Version:
+			Die dritte Version (0.3) ist veröffentlicht und steht auf der Projektseite zum <a href="https://bitbucket.org/BorisW/kennzeichen-midlet/downloads/Kennzeichen.jar">Download</a>. Änderungen zur letzten Version:
 			<ul><li>Einige neue Kennzeichen (Danke an Udo Roscher für seine Einsendung)</li>
 			<li>Viele Änderungen unter der Haube, die den Code flexibler und die Entwicklung einfacher machen.</li></ul>]]>
 		</description>
 		<pubDate>Thu, 26 Nov 2009 00:00:00 GMT</pubDate>
-		<link>http://kennzeichen.berlios.de/</link>
+		<link>http://kennzeichen.code.achterblog.de/</link>
+	</item>
+
+	<item>
+		<title>Umzug</title>
+		<description><![CDATA[
+			Durch die <a href="http://heise.de/-1353071">drohende Abschaltung</a> von developer.berlios.de wird das Projekt umgezogen. Der Quellecode befindet sich jetzt auf <a href="https://bitbucket.org/BorisW/kennzeichen-midlet/">bitbucket</a>, die Projekt-Homepage unter <a href="http://kennzeichen.code.achterblog.de">kennzeichen.code.achterblog.de</a> wo auch <a href="http://kennzeichen.code.achterblog.de/feed.rss">dieser Feed</a> forgeführt wird.]]>
+		</description>
+		<pubDate>Sat, 01 Oct 2011 00:00:00 GMT</pubDate>
+		<link>http://kennzeichen.code.achterblog.de/</link>
 	</item>
 
 </channel>

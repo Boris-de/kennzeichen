@@ -151,9 +151,9 @@
   </reporting>
 
   <scm>
-    <url>http://hg.berlios.de/repos/kennzeichen</url>
-    <connection>scm:hg:http://hg.berlios.de/repos/kennzeichen</connection>
-    <developerConnection>scm:hg:http://hg.berlios.de/repos/kennzeichen</developerConnection>
+    <url>https://bitbucket.org/BorisW/kennzeichen-midlet</url>
+    <connection>scm:hg:https://bitbucket.org/BorisW/kennzeichen-midlet</connection>
+    <developerConnection>scm:hg:ssh://hg@bitbucket.org/BorisW/kennzeichen-midlet</developerConnection>
   </scm>
 
   <licenses>
@@ -194,14 +194,14 @@
   </contributors>
 
   <issueManagement>
-    <system>Berlios</system>
-    <url>http://developer.berlios.de/bugs/?group_id=2725</url>
+    <system>Bitbucket</system>
+    <url>https://bitbucket.org/BorisW/kennzeichen-midlet/issues</url>
   </issueManagement>
 
   <distributionManagement>
     <site>
-      <id>kennzeichen.berlios.de</id>
-      <url>scpexe://shell.berlios.de/home/groups/kennzeichen/htdocs/site</url>
+      <id>tmp</id>
+      <url>file:///tmp/kennzeichen-site</url>
     </site>
   </distributionManagement>
 </project>
