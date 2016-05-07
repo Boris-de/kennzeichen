@@ -1,5 +1,12 @@
 Java-Programm für die Kennzeichen-Suche
 
+* Hinweis
+
+ Das Projekt wurde wegen der Abschaltung von developer.berlios.de hierher umgezogen, damit die letzte Version
+ und der Quellcode weiterhin für Interessierte verfügbar ist.
+ 
+ Da ich selber kein geeignetes Telefon mehr besitze schläft das Projekt allerdings.
+
 * Was ist das genau?
 
  "Kennzeichen (de)" ist ein sogenanntes Java MIDlet, also ein Programm, dass dem MDIP entspricht. Das heisst, dass man das Programm auf Java-fähigen Handys und anderen mobilen Endgeräten nutzen kann.
