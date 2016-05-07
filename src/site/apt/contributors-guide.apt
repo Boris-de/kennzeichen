@@ -1,6 +1,6 @@
 Anleitung für Helfer
 
- Kennzeichen verwendet {{{http://mercurial.selenic.com/}Mercurial}} zur Verwaltung des Quellcodes und der Daten.
+ Kennzeichen verwendet {{{https://www.mercurial-scm.org/}Mercurial}} zur Verwaltung des Quellcodes und der Daten.
  Entwickler finden Information zum Mercurial-Repository unter {{{source-repository.html}Source Repository}}.
 
  Aber auch ohne Programmier-Kenntnisse und ohne Mercurial zu benutzen kann man leicht neue Daten beisteuern.
@@ -10,5 +10,5 @@ Anleitung für Helfer
  {{{https://bitbucket.org/BorisW/kennzeichen-midlet/raw/tip/src/main/resources/de-counties.dat}weitere Datei}}.
 
  Die neuen Einträge oder die ganze Datei kann man mir
- {{{http://mailhide.recaptcha.net/d?k=0168GZFQSfmpy4Ysd6bt8mCA==&c=TzxXmlFGh7NAAp2H3sWP9nQHgous1bmyy4HHED503yo=}per Mail}}
+ {{{https://www.google.com/recaptcha/mailhide/d?k=01KljBJlHIE-euevvu9LCIkQ==&c=oIs_a6_RhUJqep_edqznmQ==}per Mail}}
  schicken. Wer möchte wird dann natürlich bei den {{{team-list.html}Helfern}} erwähnt.

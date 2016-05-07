@@ -2,7 +2,7 @@
 <project
     xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <name>Kennzeichen</name>
@@ -117,7 +117,7 @@
         <configuration>
           <linksource>true</linksource>
           <links>
-            <link>http://java.sun.com/javase/6/docs/api/</link>
+            <link>https://docs.oracle.com/javase/6/docs/api/</link>
           </links>
           <encoding>UTF-8</encoding>
         </configuration>
@@ -175,7 +175,7 @@
     <developer>
       <id>boris</id>
       <name>Boris</name>
-      <email>http://preview.tinyurl.com/yju6ofd</email>
+      <email>https://www.google.com/recaptcha/mailhide/d?k=01KljBJlHIE-euevvu9LCIkQ==&amp;c=oIs_a6_RhUJqep_edqznmQ==</email>
       <roles>
         <role>developer</role>
       </roles>
