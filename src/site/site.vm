@@ -515,12 +515,6 @@
       <hr/>
     </div>
     <div id="footer">
-##      <ul id="logos-footer">
-##        <li><a href="http://validator.w3.org/check?uri=http%3A%2F%2Fkennzeichen.code.achterblog.de%2F"><img src="images/valid-xhtml11.png" alt="Valid XHTML 1.1!" height="31" width="88" /></a></li>
-##        <li><a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fkennzeichen.code.achterblog.de%2F"><img src="images/valid-css.png" alt="Valid CSS!" height="31" width="88" /></a></li>
-##        <li><a href="http://feedvalidator.org/check.cgi?url=http%3A%2F%2Fkennzeichen.code.achterblog.de%2Ffeed.atom"><img src="images/valid-atom.png" alt="[Valid Atom 1.0]" title="Validate my Atom 1.0 feed" width="88" height="31" /></a></li>
-##        <li><a href="http://feedvalidator.org/check.cgi?url=http%3A%2F%2Fkennzeichen.code.achterblog.de%2Ffeed.rss"><img src="images/valid-rss.png" alt="[Valid RSS]" title="Validate my RSS feed" width="88" height="31" /></a></li>
-##      </ul>
       <div class="xright">Copyright &#169; 2005 &ndash; #copyright()<a href="license.html">Some Rights Reserved</a>.#publishDate( "bottom" $decoration.publishDate $decoration.version )</div>
       <div class="clear">
         <hr/>
