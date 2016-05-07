@@ -500,7 +500,6 @@
        <h5>Acknowledgments</h5>
        <ul id="logos-powered">
          <li><a href="https://maven.apache.org/"><img src="images/maven-feather.png" alt="Build with Maven" width="90" height="30" /></a></li>
-         <li><a href="https://bitbucket.org/">Code on bitbucket</a></li>
          <li><a href="https://www.schokokeks.org/">Website on schokokeks</a></li>
        </ul>
        #publishDate( "navigation-bottom" $decoration.publishDate $decoration.version )

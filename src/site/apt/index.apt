@@ -10,7 +10,7 @@ Java-Programm für die Kennzeichen-Suche
 
 * Download
 
- Eine Download-Möglichkeit gibt es auf der {{{https://bitbucket.org/BorisW/kennzeichen-midlet/downloads}Projekt-Seite}} bei bitbucket. Einfach die aktuelle .jar-Datei runterladen und auf das Handy kopieren.
+ Eine Download-Möglichkeit gibt es auf der {{{https://kennzeichen.code.achterblog.de/downloads/}Download-Seite}}. Einfach die aktuelle .jar-Datei runterladen und auf das Handy kopieren.
 
 * Bildschirmfotos
 
@@ -20,7 +20,7 @@ Java-Programm für die Kennzeichen-Suche
 
 * History
 
- * <<26.11.2009>>: Die dritte Version (0.3) ist veröffentlicht und steht auf der Projektseite zum {{{https://bitbucket.org/BorisW/kennzeichen-midlet/downloads/Kennzeichen-0.3.jar}Download}}.
+ * <<26.11.2009>>: Die dritte Version (0.3) ist veröffentlicht und steht auf der Projektseite zum {{{https://kennzeichen.code.achterblog.de/downloads/Kennzeichen-0.3.jar}Download}}.
 
    Änderungen zur letzten Version:
 
@@ -28,7 +28,7 @@ Java-Programm für die Kennzeichen-Suche
 
    * Viele Änderungen unter der Haube, die den Code flexibler und die Entwicklung einfacher machen.
 
- * <<17.09.2005>>: Die zweite Version (0.2) ist veröffentlicht und steht auf der Projektseite zum {{{https://bitbucket.org/BorisW/kennzeichen-midlet/downloads/Kennzeichen-0.2.jar}Download}}.
+ * <<17.09.2005>>: Die zweite Version (0.2) ist veröffentlicht und steht auf der Projektseite zum {{{https://kennzeichen.code.achterblog.de/downloads/Kennzeichen-0.2.jar}Download}}.
 
    Änderungen zur letzten Version:
 
@@ -36,7 +36,7 @@ Java-Programm für die Kennzeichen-Suche
 
    * Ein kleines Logo wird jetzt von Geräten angezeigt, die es unterstützen.
 
- * <<16.05.2005>>: Die erste Version (0.1) ist veröffentlicht und steht auf der Projektseite zum {{{https://bitbucket.org/BorisW/kennzeichen-midlet/downloads/Kennzeichen.jar}Download}}. Es werden nur Kennzeichen von der Suche unterstüzt, die noch vergeben werden.
+ * <<16.05.2005>>: Die erste Version (0.1) ist veröffentlicht und steht auf der Projektseite zum {{{https://kennzeichen.code.achterblog.de/downloads/Kennzeichen.jar}Download}}. Es werden nur Kennzeichen von der Suche unterstüzt, die noch vergeben werden.
 
  * Eine erste private Vorabversion (0.0) basierte noch auf Daten aus der deutschen Wikipedia und wurde nur im Quellcode veröffentlicht. Durch die Inkompatiblität zwischen verschiedenen Lizenzen und daraus resultierenden Problemen bezüglicher der Lizensierung eines Mischproduktes, habe ich mich gegen die Nutzung dieser Daten in einem Binärpaket entschieden. Die erste öffentliche Version (0.1) basierte dann auf einer eigenen Liste.
 
@@ -48,7 +48,7 @@ Java-Programm für die Kennzeichen-Suche
 
 * Quellcode
 
- Da der Kennzeichen Finder Open Source Software ist, gibt es den {{{https://bitbucket.org/BorisW/kennzeichen-midlet/}Quellcode}} natürlich auch.
+ Da der Kennzeichen Finder Open Source Software ist, gibt es den {{{https://kennzeichen.code.achterblog.de/sources/}Quellcode}} natürlich auch.
 
 * Kontakt
 

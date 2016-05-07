@@ -151,9 +151,8 @@
   </reporting>
 
   <scm>
-    <url>https://bitbucket.org/BorisW/kennzeichen-midlet</url>
-    <connection>scm:hg:https://bitbucket.org/BorisW/kennzeichen-midlet</connection>
-    <developerConnection>scm:hg:ssh://hg@bitbucket.org/BorisW/kennzeichen-midlet</developerConnection>
+    <url>https://kennzeichen.code.achterblog.de/sources/</url>
+    <connection>scm:hg:https://kennzeichen.code.achterblog.de/sources/</connection>
   </scm>
 
   <licenses>
@@ -194,8 +193,8 @@
   </contributors>
 
   <issueManagement>
-    <system>Bitbucket</system>
-    <url>https://bitbucket.org/BorisW/kennzeichen-midlet/issues</url>
+    <system>Mail</system>
+    <url>https://www.google.com/recaptcha/mailhide/d?k=01KljBJlHIE-euevvu9LCIkQ==&amp;c=oIs_a6_RhUJqep_edqznmQ==</url>
   </issueManagement>
 
   <distributionManagement>

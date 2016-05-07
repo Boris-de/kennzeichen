@@ -10,7 +10,7 @@
 	<id>https://kennzeichen.code.achterblog.de/</id>
 	<author>
 		<name>Boris</name>
-		<uri>https://bitbucket.org/BorisW/kennzeichen-midlet/</uri>
+		<uri>https://kennzeichen.code.achterblog.de/</uri>
 	</author>
 	
 	<entry>
@@ -20,7 +20,7 @@
 		<updated>2011-10-01T00:00:00Z</updated>
 		<content type="xhtml">
 			<div xmlns="http://www.w3.org/1999/xhtml">
-				Durch die <a href="http://heise.de/-1353071">drohende Abschaltung</a> von developer.berlios.de wird das Projekt umgezogen. Der Quellecode befindet sich jetzt auf <a href="https://bitbucket.org/BorisW/kennzeichen-midlet/">bitbucket</a>, die Projekt-Homepage unter <a href="https://kennzeichen.code.achterblog.de">kennzeichen.code.achterblog.de</a> wo auch <a href="https://kennzeichen.code.achterblog.de/feed.atom">dieser Feed</a> forgeführt wird.
+				Durch die <a href="http://heise.de/-1353071">drohende Abschaltung</a> von developer.berlios.de wird das Projekt umgezogen. Der Quellecode befindet sich jetzt <a href="https://kennzeichen.code.achterblog.de/sources/">hier</a>, die Projekt-Homepage unter <a href="https://kennzeichen.code.achterblog.de">kennzeichen.code.achterblog.de</a> wo auch <a href="https://kennzeichen.code.achterblog.de/feed.atom">dieser Feed</a> fortgeführt wird.
 			</div>
 		</content>
 	</entry>
@@ -32,7 +32,7 @@
 		<updated>2009-11-26T00:00:00Z</updated>
 		<content type="xhtml">
 			<div xmlns="http://www.w3.org/1999/xhtml">
-				Die dritte Version (0.3) ist veröffentlicht und steht auf der Projektseite zum <a href="https://bitbucket.org/BorisW/kennzeichen-midlet/downloads/Kennzeichen-0.3.jar">Download</a>. Änderungen zur letzten Version:
+				Die dritte Version (0.3) ist veröffentlicht und steht auf der Projektseite zum <a href="https://kennzeichen.code.achterblog.de/downloads/Kennzeichen-0.3.jar">Download</a>. Änderungen zur letzten Version:
 				<ul><li>Einige neue Kennzeichen (Danke an Udo Roscher für seine Einsendung)</li>
 				<li>Viele Änderungen unter der Haube, die den Code flexibler und die Entwicklung einfacher machen.</li></ul>
 			</div>
@@ -60,7 +60,7 @@
 		<updated>2005-05-16T00:00:00Z</updated>
 		<content type="xhtml">
 			<div xmlns="http://www.w3.org/1999/xhtml">
-				Die erste Version (0.1) ist veröffentlicht und steht auf der Projektseite zum <a href="https://bitbucket.org/BorisW/kennzeichen-midlet/downloads/Kennzeichen.jar">Download</a>. Es werden nur Kennzeichen von der Suche unterstüzt, die noch vergeben werden.
+				Die erste Version (0.1) ist veröffentlicht und steht auf der Projektseite zum <a href="https://kennzeichen.code.achterblog.de/downloads/Kennzeichen.jar">Download</a>. Es werden nur Kennzeichen von der Suche unterstüzt, die noch vergeben werden.
 			</div>
 		</content>
 	</entry>
